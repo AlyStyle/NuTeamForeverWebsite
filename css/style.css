@@ -1,23 +1,47 @@
 @font-face {
-  font-family: 'PenumbraSansStd-Regular';
-  src: url('https://www.wfonts.com/data/2016/05/22/penumbra-sans-std/PenumbraSansStd-Regular.otf') format('otf');
+  font-family: 'PenumbraSansStd';
+  src: url("../Resources/fonts/PenumbraSansStd-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'PenumbraSansStd-Bold';
-    src: url('https://www.wfonts.com/data/2016/05/22/penumbra-sans-std/PenumbraSansStd-Bold.otf') format('otf');
+    src: url("../Resources/fonts/PenumbraSansStd-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'arial-black';
-    src: url("../fonts/arial-black.ttf") format('truetype');
+    src: url("../Resources/fonts/arial-black.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'ZeroesOne';
-    src: url("../fonts/ZeroesOne-Regular.ttf") format('truetype');
+    src: url("../Resources/fonts/ZeroesOne.ttf") format('truetype');
 }
 
 html {
     background-color: #ffffff;
+}
+
+footer {
+    background-color: #404040;
+    padding: 25px;
+}
+
+footer p {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+footer h1 {
+    color: #ffffff;
+    font-family: 'arial-black', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
 }
