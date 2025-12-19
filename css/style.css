@@ -50,7 +50,10 @@ html {
     background-color: hsla(0, 0%, 0%, 0);
     border: none;
     cursor: pointer;
+
 }
+
+
 
 .prev{
     left: 0;
@@ -60,9 +63,13 @@ html {
     right: 0;
 }
 
+@keyframes 
+
 
 img.displaySlide{
     display: block;
+    animation-name: slide;
+    animation-duration: 1.5s;
 }
 
 footer {

@@ -17,6 +17,8 @@ function initializeSlider(){
 
 function showSlide(index){
 
+    
+
     if(index >= slides.length){
         slideIndex = 0;
     }
@@ -33,12 +35,15 @@ function showSlide(index){
 
 function prevSlide(){
     clearInterval(intervalId);
+    intervalId = setInterval(nextSlide, 5000);
     slideIndex--;
     showSlide(slideIndex);
     
 }
 
 function nextSlide(){
+    clearInterval(intervalId);
+    intervalId = setInterval(nextSlide, 5000);
     slideIndex++;
     showSlide(slideIndex);
 }
