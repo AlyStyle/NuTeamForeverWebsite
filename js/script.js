@@ -8,7 +8,7 @@ function initializeSlider(){
 
     if (slides.length > 0){
         slides[slideIndex].classList.add("displaySlide");
-        intervalId = setInterval(nextSlide, 500);
+        intervalId = setInterval(nextSlide, 5000);
         console.log(intervalId);
     }
 
@@ -16,6 +16,14 @@ function initializeSlider(){
 }
 
 function showSlide(index){
+
+    if(index >= slides.length){
+        slideIndex = 0;
+    }
+    else if(index < 0){
+        slideIndex = slides.length -1;
+    }
+
     slides.forEach(slide => {
         slide.classList.remove("displaySlide");
     });
@@ -24,7 +32,10 @@ function showSlide(index){
 }
 
 function prevSlide(){
-
+    clearInterval(intervalId);
+    slideIndex--;
+    showSlide(slideIndex);
+    
 }
 
 function nextSlide(){
