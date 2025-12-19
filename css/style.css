@@ -32,6 +32,10 @@ html {
     display: none;
 }
 
+.slider button{
+    position: absolute;
+}
+
 img.displaySlide{
     display: block;
 }
