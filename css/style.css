@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'PenumbraSansStd';
-  src: url("../Resources/fonts/PenumbraSansStd-Regular.otf") format('opentype');
+  src: url("/Resources/fonts/PenumbraSansStd-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'PenumbraSansStd-Bold';
-    src: url("../Resources/fonts/PenumbraSansStd-Bold.otf") format('opentype');
+    src: url("/Resources/fonts/PenumbraSansStd-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'arial-black';
-    src: url("../Resources/fonts/arial-black.ttf") format('truetype');
+    src: url("/Resources/fonts/arial-black.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'ZeroesOne';
-    src: url("../Resources/fonts/ZeroesOne.ttf") format('truetype');
+    src: url("/Resources/fonts/ZeroesOne.ttf") format('truetype');
 }
 
 html {
@@ -134,6 +134,12 @@ li a {
     font-size: 200%;
     grid-column: 1;
     transform: scalex(2);
+}
+
+.social-links img {
+    width: 120px;
+    height: auto;
+    margin: 0 10px;
 }
 
 .contactTitle{
