@@ -195,7 +195,7 @@ li a {
 .content-section {
     background-color: #000000;
     max-width: 40%;
-    margin: 40px auto;
+    margin: 80px auto;
     text-align: center;
     padding: 1%;
     transform: rotate(5deg);
@@ -220,7 +220,7 @@ li a {
 
 .socials{
     grid-column: 1;
-    
+
 }
 
 .contact-us {
