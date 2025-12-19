@@ -261,9 +261,35 @@ img.displaySlide{
     margin: 100px auto;
     width: 90%;
     display: flex;
+    overflow-x: auto;
 }
 
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
 
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    align-content: center;
+    flex: 0 0 5em;
+    height: 40vh;
+    width: 70vh;
+}
+
+@keyframes spin{
+    from {
+        translate: 0;
+    }
+    to {
+        translate: -100%;
+    }
+}
 
 /* Footer styling */
 footer {
