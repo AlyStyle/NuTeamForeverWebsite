@@ -134,6 +134,8 @@ li a {
     font-size: 200%;
     grid-column: 1;
     transform: scalex(2);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 
 .contactTitle{
@@ -142,6 +144,8 @@ li a {
     font-size: 200%;
     grid-column: 3;
     transform: scalex(2);
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
 }
 
 .slider{
