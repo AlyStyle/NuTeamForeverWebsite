@@ -32,6 +32,10 @@ html {
     display: none;
 }
 
+img.displaySlide{
+    display: block;
+}
+
 footer {
     background-color: #2c2c2c;
     color: white;
