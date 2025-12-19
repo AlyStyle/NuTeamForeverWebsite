@@ -22,6 +22,15 @@ html {
     background-color: #ffffff;
 }
 
+.slider{
+    position: relative;
+    overflow: hidden;
+}
+
+.slides img{
+    display: none;
+}
+
 footer {
     background-color: #404040;
     padding: 25px;
