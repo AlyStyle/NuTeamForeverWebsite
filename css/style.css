@@ -20,6 +20,7 @@
 
 html {
     background-color: #ffffff;
+    scroll-behavior: smooth;
 }
 
 .slider{
@@ -32,25 +33,70 @@ html {
 }
 
 footer {
-    background-color: #404040;
-    padding: 25px;
+    background-color: #2c2c2c;
+    color: white;
+    padding: 20px;
 }
 
-footer p {
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+@font-face {
+  font-family: 'PenumbraSansStd';
+  src: url("../Resources/fonts/PenumbraSansStd-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'PenumbraSansStd-Bold';
+    src: url("../Resources/fonts/PenumbraSansStd-Bold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'arial-black';
+    src: url("../Resources/fonts/arial-black.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'ZeroesOne';
+    src: url("../Resources/fonts/ZeroesOne.ttf") format('truetype');
+}
+
+html {
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 20px;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;   
+    padding: auto;
+}
+
+.footer-row p {
+    grid-column: 2;
+    max-width: 140ch;
     text-align: center;
     margin: 0;
-    padding-left: 20%;
-    padding-right: 20%;
-
 }
 
 footer h1 {
-    color: #ffffff;
-    font-family: 'arial-black', Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-family: "arial-black", sans-serif;
     text-align: center;
-    margin: 10px;
+    font-size: 140%;
+    margin-top: 10px;
 }
+
+.back-to-top {
+    grid-column: 3;
+    justify-self: end;
+}
+
+
+
+
+
+
