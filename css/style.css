@@ -67,6 +67,23 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Header styling */
+section{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    clip-path: polygon(100% 50%, 100% 0%, 0 0, 0 50%, 50% 85%);
+}
+
+section img{
+    width: 300px;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+
+/* Selected navigation item */
 nav {
     text-align: center;
 }
@@ -97,6 +114,7 @@ li a {
     color: black;
 }
 
+/* Footer styling */
 footer {
     background-color: #2c2c2c;
     color: white;
