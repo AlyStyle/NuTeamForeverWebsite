@@ -287,6 +287,8 @@ img.displaySlide{
     align-items: center;
     justify-content: center;
     gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
 }
 
 .carousel::-webkit-scrollbar{
