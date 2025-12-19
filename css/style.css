@@ -276,8 +276,6 @@ img.displaySlide{
 }
 
 .carousel{
-    margin: 100px auto;
-    width: 90%;
     display: flex;
     overflow-x: auto;
 }
@@ -287,7 +285,7 @@ img.displaySlide{
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: spin 5s infinite linear;
+    animation: spin 30s infinite linear;
     padding-right: 1em;
 }
 
@@ -309,6 +307,21 @@ img.displaySlide{
     to {
         translate: -100%;
     }
+}
+
+.third-party-section h2 {
+    font-family: "arial-black", Helvetica, sans-serif;
+    color: black;
+    font-size: 180%;
+    margin-bottom: 10px;
+    padding: 3%;
+    text-align: center;
+}
+
+.third-party-section span {
+    font-family: "ZeroesOne", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 200%;
 }
 
 /* Footer styling */
