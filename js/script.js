@@ -50,33 +50,47 @@ function nextSlide(){
 
 async function loadPosts() {
   const res = await fetch(
-    "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=teamforever.bsky.social&limit=10"
+    "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=teamforever.bsky.social&limit=10&filter=posts_no_replies"
   );
   const data = await res.json();
 
   const container = document.getElementById("posts");
+  container.innerHTML = ""; // optional reset
 
   data.feed.forEach(item => {
-    const post = document.createElement("article");
+    const post = document.createElement("blockquote");
 
-    // text
-    const text = document.createElement("p");
-    text.textContent = item.post.record.text;
-    post.appendChild(text);
-
-    // images
-    const embed = item.post.embed;
-    if (embed?.images) {
-      embed.images.forEach(img => {
-        const image = document.createElement("img");
-        image.src = img.thumb || img.fullsize;
-        image.style.maxWidth = "100%";
-        post.appendChild(image);
-      });
-    }
+    post.className = "bluesky-embed";
+    post.setAttribute("data-bluesky-uri", item.post.uri);
+    post.setAttribute("data-bluesky-cid", item.post.cid);
+    post.setAttribute("data-bluesky-embed-color-mode", "white");
 
     container.appendChild(post);
   });
+
+  loadBlueskyEmbed();
 }
+
+function loadBlueskyEmbed() {
+  // If script already exists, just re-process embeds
+  if (window.bskyEmbedLoaded) {
+    if (window.bskyEmbed?.load) {
+      window.bskyEmbed.load();
+    }
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = "https://embed.bsky.app/static/embed.js";
+  script.charset = "utf-8";
+
+  script.onload = () => {
+    window.bskyEmbedLoaded = true;
+  };
+
+  document.body.appendChild(script);
+}
+
 
 loadPosts();
