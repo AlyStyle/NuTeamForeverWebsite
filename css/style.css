@@ -194,6 +194,36 @@ li a {
     font-size: 330%;
 }
 
+.social-contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+.socials{
+    grid-column: 1;
+}
+
+.contact-us {
+    grid-column: 3;
+}
+
+
+.social-contact-section section {
+    background-color: #000000;
+}
+
+.social-contact-section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
 
 /* Footer styling */
 footer {
