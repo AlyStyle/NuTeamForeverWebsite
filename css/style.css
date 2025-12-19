@@ -34,6 +34,19 @@ html {
 
 .slider button{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    background-color: hsla(0, 0%, 0%, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
 }
 
 img.displaySlide{
