@@ -47,3 +47,36 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+
+async function loadPosts() {
+  const res = await fetch(
+    "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=teamforever.bsky.social&limit=10"
+  );
+  const data = await res.json();
+
+  const container = document.getElementById("posts");
+
+  data.feed.forEach(item => {
+    const post = document.createElement("article");
+
+    // text
+    const text = document.createElement("p");
+    text.textContent = item.post.record.text;
+    post.appendChild(text);
+
+    // images
+    const embed = item.post.embed;
+    if (embed?.images) {
+      embed.images.forEach(img => {
+        const image = document.createElement("img");
+        image.src = img.thumb || img.fullsize;
+        image.style.maxWidth = "100%";
+        post.appendChild(image);
+      });
+    }
+
+    container.appendChild(post);
+  });
+}
+
+loadPosts();

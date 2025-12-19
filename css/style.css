@@ -36,6 +36,20 @@ html {
     }
 }
 
+#posts {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* spacing between posts */
+  overflow-x: auto; /* allows scrolling if too many posts */
+  color:#ffffff;
+}
+
+#posts article {
+  min-width: 250px; /* each post gets its own block */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
 
 .slides {
     width: 100%;
