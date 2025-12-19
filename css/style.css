@@ -1,22 +1,27 @@
 @font-face {
   font-family: 'PenumbraSansStd';
-  src: url("/Resources/Fonts/PenumbraSansStd-Regular.otf") format('opentype');
+  src: url("/NuTeamForeverWebsite/resources/fonts/PenumbraSansStd-Regular.otf")
+       format("opentype");
 }
 
 @font-face {
-    font-family: 'PenumbraSansStd-Bold';
-    src: url("/Resources/Fonts/PenumbraSansStd-Bold.otf") format('opentype');
+  font-family: 'PenumbraSansStd-Bold';
+  src: url("/NuTeamForeverWebsite/resources/fonts/PenumbraSansStd-Bold.otf")
+       format("opentype");
 }
 
 @font-face {
-    font-family: 'arial-black';
-    src: url("/Resources/Fonts/arial-black.ttf") format('truetype');
+  font-family: 'arial-black';
+  src: url("/NuTeamForeverWebsite/resources/fonts/arial-black.ttf")
+       format("truetype");
 }
 
 @font-face {
-    font-family: 'ZeroesOne';
-    src: url("/Resources/Fonts/ZeroesOne.ttf") format('truetype');
+  font-family: 'ZeroesOne';
+  src: url("/NuTeamForeverWebsite/resources/fonts/ZeroesOne.ttf")
+       format("truetype");
 }
+
 
 html {
     background-color: #ffffff;
