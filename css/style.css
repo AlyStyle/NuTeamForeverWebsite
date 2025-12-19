@@ -30,6 +30,7 @@ html {
 
 .slides img{
     display: none;
+    width: 100%;
 }
 
 .slider button{
