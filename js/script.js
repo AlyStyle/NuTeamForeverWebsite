@@ -1,3 +1,5 @@
+var projectPopupDisplay = document.querySelector(".projectPopupDisplay");
+
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
@@ -91,6 +93,18 @@ function loadBlueskyEmbed() {
 
   document.body.appendChild(script);
 }
-
-
 loadPosts();
+
+document.querySelectorAll(".projectInfo").forEach(function (button) {
+	button.addEventListener("click", function () {
+        // Retrieving attributes from the clicked button
+        var projectid = this.getAttribute("projectid");
+        // print to console
+        console.log("Project ID: " + projectid);
+        projectPopup(projectid);
+	});
+});
+
+function projectPopup(projectid) {
+    projectPopupDisplay.style.display = "block";
+}

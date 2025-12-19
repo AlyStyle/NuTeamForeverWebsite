@@ -7,7 +7,7 @@
 		<!-- Metadata and linking stylesheets -->
 		<meta charset="UTF-8" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<meta name="description" content="A website dedicated to the Reese's Peanut Butter Cup" >
+		<meta name="description" content="Home of all Team Forever projects" >
 		<meta name="robots" content="noindex, nofollow" >
 		<title>Home - Team Forever</title>
 		<!-- Stylesheets (to reset and to add custom properties to website) -->
@@ -15,99 +15,121 @@
 		<link rel="stylesheet" href="css/style.css" >
         <script src="./js/script.js" defer></script>
 	</head>
-    <body>
-		<header>
-			<div class="TFHeader">
-				<img src="Resources/Logos/TF/TeamForeverLogo.png" alt="Team Forever Logo">
+	<main>
+		<section class="projectPopupDisplay">
+			<div class="projectPopupContent">
+				<section style="grid-column: 1;">
+					<img src="Resources/Logos/3rdParty/3Air_Eukaryot.png" alt="3Air_Eukaryot Logo">
+					<h1 class="projectTitle">Project Title</h1>
+					<p class="projectDescription">By Author</p>
+					<img src="Resources/3rdParty/template.jpg" alt="Project Screenshot">
+					<div>
+						<button>Project Site</button>
+						<button>Youtube</button>
+					</div>
+				</section>
+				<section style="grid-column: 3;">
+					<p>This project is by a british guy named prod and he is crazy and keeps trapping me in his duel of fates dungeon to write the story. It has sonic, shadow, and other fucks and, folks, let’s just say, this ain’t your grandma’s essence. It’s a 2D platformer also using v4+, which thank god cause i will never use new syntax</p>
+					<p>-------------------------------------</p>
+					<p>ProdNW, AlyStyle, and 3 others from Team Forever are on this project!</p>
+					<button>Close</button>
+				</section>
 			</div>
-			<nav>
-				<ul>
-					<li class="selected"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="controller_setup.html">Controller Setup</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="rsds.html">RSDS</a></li>
-					<li><a href="credits.html">Credits</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<section>
-			<div class="slider">
-				<div class="slides">
-					<img class="slide" src="Resources/Home/Promo/Promo1.png" alt="S1F_Logo">
-					<img class="slide" src="Resources/Home/Promo/Promo2.png" alt="S2A_Logo">
-					<img class="slide" src="Resources/Home/Promo/Promo3.png" alt="SCDi_Logo1">
-					<img class="slide" src="Resources/Home/Promo/Promo4.png" alt="S1F_TFF">
+		</section>
+		<body>
+			<header>
+				<div class="TFHeader">
+					<img src="Resources/Logos/TF/TeamForeverLogo.png" alt="Team Forever Logo">
 				</div>
+				<nav>
+					<ul>
+						<li class="selected"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="controller_setup.html">Controller Setup</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="rsds.html">RSDS</a></li>
+						<li><a href="credits.html">Credits</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section>
+				<div class="slider">
+					<div class="slides">
+						<img class="slide" src="Resources/Home/Promo/Promo1.png" alt="S1F_Logo">
+						<img class="slide" src="Resources/Home/Promo/Promo2.png" alt="S2A_Logo">
+						<img class="slide" src="Resources/Home/Promo/Promo3.png" alt="SCDi_Logo1">
+						<img class="slide" src="Resources/Home/Promo/Promo4.png" alt="S1F_TFF">
+					</div>
+					
+					<button class="prev" onclick="prevSlide()"><img src="Resources/Arrows/left.png"></button>
+					<button class="next" onclick="nextSlide()"><img src="Resources/Arrows/right.png"></button>
+
+				</div>
+			</section>
+
+			<div class="intro-text">
+				<p>Team Forever is a group of passionate Sonic fans, taking the Retro Engine decompilations of Sonic the Hedgehog, Sonic the Hedgehog 2, and Sonic the Hedgehog CD; adding our own love and polish to them.</p>
+			</div>
+
+			<section>
+				<div class="content-section">
+					<h1>THE LATEST NEWS!</h1>
+
+					<div id="posts"></div>
+				</div>
+			</section>
+
+
+			<section class="social-contact-section">
+				<section class="socials">
+					<div class ="social-links">
+						<a href="https://bsky.app/profile/teamforever.bsky.social" target="_blank">
+							<img src="Resources/Social Media Monitors/bluesky.gif" alt="Bluesky Monitor">
+						</a>
+						<a href="https://www.youtube.com/@teamforeverdev" target="_blank">
+							<img src="Resources/Social Media Monitors/youtube.gif" alt="Youtube Monitor">
+						</a>
+					</div>
+					<h2>Check our socials for the latest news; including teasers, announcements, and releases!</h2>
+				</section>
+				<h1 class="socialsTitle">Socials</h1>
+
+				<section class="contact-us">
+					<h2>Contact us on our support email: <a href="mailto:teamforeverhelp@gmail.com">teamforeverhelp@gmail.com</a> if you need help.</h2>
+					<div class ="social-links">
+						<img src="Resources/Home/running.gif" alt="Email Monitor">
+						<img class="letter" src="Resources/Home/mail.png" alt="Email Monitor">
+					</div>
+				</section>
+				<h1 class="contactTitle">Contact</h1>
 				
-				<button class="prev" onclick="prevSlide()"><img src="Resources/Arrows/left.png"></button>
-				<button class="next" onclick="nextSlide()"><img src="Resources/Arrows/right.png"></button>
-
-			</div>
-		</section>
-
-		<div class="intro-text">
-			<p>Team Forever is a group of passionate Sonic fans, taking the Retro Engine decompilations of Sonic the Hedgehog, Sonic the Hedgehog 2, and Sonic the Hedgehog CD; adding our own love and polish to them.</p>
-		</div>
-
-		<section>
-			<div class="content-section">
-				<h1>THE LATEST NEWS!</h1>
-
-				<div id="posts"></div>
-			</div>
-		</section>
-
-
-		<section class="social-contact-section">
-			<section class="socials">
-				<div class ="social-links">
-					<a href="https://bsky.app/profile/teamforever.bsky.social" target="_blank">
-						<img src="Resources/Social Media Monitors/bluesky.gif" alt="Bluesky Monitor">
-					</a>
-					<a href="https://www.youtube.com/@teamforeverdev" target="_blank">
-						<img src="Resources/Social Media Monitors/youtube.gif" alt="Youtube Monitor">
-					</a>
-				</div>
-				<h2>Check our socials for the latest news; including teasers, announcements, and releases!</h2>
 			</section>
-			<h1 class="socialsTitle">Socials</h1>
 
-			<section class="contact-us">
-				<h2>Contact us on our support email: <a href="mailto:teamforeverhelp@gmail.com">teamforeverhelp@gmail.com</a> if you need help.</h2>
-				<div class ="social-links">
-					<img src="Resources/Home/running.gif" alt="Email Monitor">
-					<img class="letter" src="Resources/Home/mail.png" alt="Email Monitor">
+			<section class="third-party-section">
+				<div>
+					<h2>If you like <span>Team Forever</span> projects, you'll definitely like:</h2>
+				</div>
+
+				<div class="carousel">
+					<div class="group">
+						<button class="projectInfo" projectid="3Air_Eukaryot"><img class="card" src="Resources/Logos/3rdParty/3Air_Eukaryot.png" alt="3Air_Eukaryot Logo"></button>
+						<button class="projectInfo" projectid="DuelofFates_ChaosDriveStudio"><img class="card" src="Resources/Logos/3rdParty/DuelofFates_ChaosDriveStudio.png" alt="DuelofFates_ChaosDriveStudio Logo"></button>
+						<button class="projectInfo" projectid="Essence_TeamReDream"><img class="card" src="Resources/Logos/3rdParty/Essence_TeamReDream.png" alt="Essence_TeamReDream Logo"></button>
+						<button class="projectInfo" projectid="OriginsUltrafix_TeamUltrafix"><img class="card" src="Resources/Logos/3rdParty/OriginsUltrafix_TeamUltrafix.png" alt="OriginsUltrafix_TeamUltrafix Logo"></button>
+					</div>
+					<div aria-hidden class="group">
+						<button class="projectInfo" projectid="3Air_Eukaryot"><img class="card" src="Resources/Logos/3rdParty/3Air_Eukaryot.png" alt="3Air_Eukaryot Logo"></button>
+						<button class="projectInfo" projectid="DuelofFates_ChaosDriveStudio"><img class="card" src="Resources/Logos/3rdParty/DuelofFates_ChaosDriveStudio.png" alt="DuelofFates_ChaosDriveStudio Logo"></button>
+						<button class="projectInfo" projectid="Essence_TeamReDream"><img class="card" src="Resources/Logos/3rdParty/Essence_TeamReDream.png" alt="Essence_TeamReDream Logo"></button>
+						<button class="projectInfo" projectid="OriginsUltrafix_TeamUltrafix"><img class="card" src="Resources/Logos/3rdParty/OriginsUltrafix_TeamUltrafix.png" alt="OriginsUltrafix_TeamUltrafix Logo"></button>
+					</div>
 				</div>
 			</section>
-			<h1 class="contactTitle">Contact</h1>
-			
-		</section>
 
-		<section class="third-party-section">
-			<div>
-				<h2>If you like <span>Team Forever</span> projects, you'll definitely like:</h2>
-			</div>
-
-			<div class="carousel">
-				<div class="group">
-					<img class="card" src="Resources/Logos/3rdParty/3Air_Eukaryot.png" alt="3Air_Eukaryot Logo">
-					<img class="card" src="Resources/Logos/3rdParty/DuelofFates_ChaosDriveStudio.png" alt="DuelofFates_ChaosDriveStudio Logo">
-					<img class="card" src="Resources/Logos/3rdParty/Essence_TeamReDream.png" alt="Essence_TeamReDream Logo">
-					<img class="card" src="Resources/Logos/3rdParty/OriginsUltrafix_TeamUltrafix.png" alt="OriginsUltrafix_TeamUltrafix Logo">
-				</div>
-				<div aria-hidden class="group">
-					<img class="card" src="Resources/Logos/3rdParty/3Air_Eukaryot.png" alt="3Air_Eukaryot Logo">
-					<img class="card" src="Resources/Logos/3rdParty/DuelofFates_ChaosDriveStudio.png" alt="DuelofFates_ChaosDriveStudio Logo">
-					<img class="card" src="Resources/Logos/3rdParty/Essence_TeamReDream.png" alt="Essence_TeamReDream Logo">
-					<img class="card" src="Resources/Logos/3rdParty/OriginsUltrafix_TeamUltrafix.png" alt="OriginsUltrafix_TeamUltrafix Logo">
-				</div>
-			</div>
-		</section>
-
-    </body>
+		</body>
+	</main>
     <footer>
 		<div class="footer-row">
 			<p>"Sonic the Hedgehog Forever", “Sonic the Hedgehog 2 Absolute”, “Sonic the Hedgehog 2 Absolute : A Night at the Casino”, and “'UNANNOUNCED TEAM FOREVER CD PROJECT'” are non-profit fan game projects. They are not affiliated with SEGA®, Sonic Team®, Evening Star®, or Headcannon® in any way. Sonic the Hedgehog is a trademark of SEGA®. All copyrights regarding Sonic the Hedgehog, including characters, names, terms, art, and music belong to SEGA®. All registered trademarks belong to SEGA® and Sonic Team®. Retro Engine is a trademark of Evening Star®. Team Forever have no intent to infringe said copyrights and registered trademarks. No financial gain is made from these projects.</p>
