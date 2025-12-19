@@ -133,12 +133,22 @@ li a {
 
 .socials{
     grid-column: 1;
-
+    padding: 5%;
 }
 
 .contact-us {
     grid-row: 1;
     grid-column: 3;
+    padding: 5%;
+}
+
+.contact-us h2 a{
+    color: white;
+    text-decoration: underline;
+}
+
+.letter {
+    transform: rotate(-10deg);
 }
 
 
@@ -151,6 +161,7 @@ li a {
     color: white;
     font-size: 160%;
     margin-bottom: 10px;
+    padding: 3%;
 }
 
 .socialsTitle{
@@ -161,6 +172,13 @@ li a {
     transform: scalex(2);
     text-transform: uppercase;
     letter-spacing: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .social-links img {
