@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'PenumbraSansStd';
-  src: url("/Resources/fonts/PenumbraSansStd-Regular.otf") format('opentype');
+  src: url("/Resources/Fonts/PenumbraSansStd-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'PenumbraSansStd-Bold';
-    src: url("/Resources/fonts/PenumbraSansStd-Bold.otf") format('opentype');
+    src: url("/Resources/Fonts/PenumbraSansStd-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'arial-black';
-    src: url("/Resources/fonts/arial-black.ttf") format('truetype');
+    src: url("/Resources/Fonts/arial-black.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'ZeroesOne';
-    src: url("/Resources/fonts/ZeroesOne.ttf") format('truetype');
+    src: url("/Resources/Fonts/ZeroesOne.ttf") format('truetype');
 }
 
 html {
