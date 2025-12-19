@@ -278,6 +278,7 @@ img.displaySlide{
 .carousel{
     display: flex;
     overflow-x: auto;
+    overflow: hidden;
 }
 
 .group{
