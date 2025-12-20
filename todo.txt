@@ -2,3 +2,4 @@
 - increase padding between home bar and promo thingy
 - move back arrow to top left of popup
 - cleanup and polishing of code
+- add dropshadow to third party logos (through css)
