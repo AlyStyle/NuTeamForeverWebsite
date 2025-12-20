@@ -332,15 +332,24 @@ img.displaySlide{
 }
 
 .projectPopupDisplay {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 3;
-	background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.projectPopupDisplay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .projectPopupContent {

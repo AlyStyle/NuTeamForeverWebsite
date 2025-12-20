@@ -1,26 +1,25 @@
+document.addEventListener("DOMContentLoaded", initializeSlider);
+
+
 var projectPopupDisplay = document.querySelector(".projectPopupDisplay");
+
 const closeButton = document.getElementById("closeButton")
 const slides = document.querySelectorAll(".slides img");
+const closeBtn = document.getElementById("closeButton");
+
 let slideIndex = 0;
 let intervalId = null;
 
-document.addEventListener("DOMContentLoaded", initializeSlider);
 
 function initializeSlider(){
-
     if (slides.length > 0){
         slides[slideIndex].classList.add("displaySlide");
         intervalId = setInterval(nextSlide, 5000);
         console.log(intervalId);
     }
-
-
 }
 
 function showSlide(index){
-
-    
-
     if(index >= slides.length){
         slideIndex = 0;
     }
@@ -40,7 +39,6 @@ function prevSlide(){
     intervalId = setInterval(nextSlide, 5000);
     slideIndex--;
     showSlide(slideIndex);
-    
 }
 
 function nextSlide(){
@@ -95,26 +93,7 @@ function loadBlueskyEmbed() {
 }
 loadPosts();
 
-document.querySelectorAll(".projectInfo").forEach(function (button) {
-	button.addEventListener("click", function () {
-        // Retrieving attributes from the clicked button
-        var projectid = this.getAttribute("projectid");
-        // grab image in button
-        var projectimage = this.querySelector("img").src;
-        
-        // print to console
-        console.log("Project ID: " + projectid);
-        console.log("Project Image: " + projectimage);
-        projectPopup(projectid, projectimage);
-
-	});
-});
-
-closeButton.addEventListener("click", closeProjectPopup);
-
-
 function projectPopup(projectid , projectimage) {
-    projectPopupDisplay.style.display = "block";
     document.getElementById("projectPopupImage").src = projectimage;
 
     if (projectid === "3Air_Eukaryot") {
@@ -170,8 +149,27 @@ function projectPopup(projectid , projectimage) {
 }
 
 function closeProjectPopup() {
-    projectPopupDisplay.style.display = "none";
+    projectPopupDisplay.classList.remove("active");
 }
+
+document.querySelectorAll(".projectInfo").forEach(function (button) {
+	button.addEventListener("click", function () {
+        // Retrieving attributes from the clicked button
+        var projectid = this.getAttribute("projectid");
+        // grab image in button
+        var projectimage = this.querySelector("img").src;
+        
+        // print to console
+        console.log("Project ID: " + projectid);
+        console.log("Project Image: " + projectimage);
+        projectPopup(projectid, projectimage);
+
+        projectPopupDisplay.classList.add("active");
+
+	});
+});
+
+closeButton.addEventListener("click", closeProjectPopup);
 
 
 
