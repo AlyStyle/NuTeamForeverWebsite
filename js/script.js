@@ -1,5 +1,5 @@
 var projectPopupDisplay = document.querySelector(".projectPopupDisplay");
-
+const closeButton = document.getElementById("closeButton")
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
@@ -102,9 +102,20 @@ document.querySelectorAll(".projectInfo").forEach(function (button) {
         // print to console
         console.log("Project ID: " + projectid);
         projectPopup(projectid);
+
 	});
 });
+
+closeButton.addEventListener("click", closeProjectPopup);
+
 
 function projectPopup(projectid) {
     projectPopupDisplay.style.display = "block";
 }
+
+function closeProjectPopup() {
+    projectPopupDisplay.style.display = "none";
+}
+
+
+
