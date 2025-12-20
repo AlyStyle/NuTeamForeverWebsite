@@ -359,6 +359,15 @@ img.displaySlide{
     justify-content: center;
 }
 
+.projectPopupContent button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
 .projectPopupContent img {
     width: 60%;
     height: auto;
@@ -366,10 +375,39 @@ img.displaySlide{
     margin-bottom: 20px;
 }
 
+.projectPopupContent a {
+    background-color: black;
+    font-family: "PenumbraSansStd", sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
 .popupText{
     max-width: 60vh;
     font-size: 1.5em;
 }
+
+.projectDescription {
+    font-family: "PenumbraSansStd", sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#projectDesc {
+    border-bottom: 10px solid #000000;
+}
+
+#whoEnvolved {
+    margin-top: 10px;
+    font-style: italic;
+    color: #8e8e8e;
+}
+
 /* Footer styling */
 footer {
     background-color: #2c2c2c;
