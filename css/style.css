@@ -283,6 +283,7 @@ img.displaySlide{
     display: flex;
     overflow-x: auto;
     overflow: hidden;
+    margin-bottom: 3vh;
 }
 
 .group{
@@ -333,6 +334,7 @@ img.displaySlide{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    filter: drop-shadow(9px 6px #000000);
 }
 
 .projectPopupDisplay {
@@ -412,7 +414,7 @@ img.displaySlide{
 }
 
 .projectDescription {
-    font-family: "PenumbraSansStd", sans-serif;
+    font-family: "PenumbraSansStd", Arial, sans-serif,;
     font-weight: bold;
     font-size: 1.7em;
     margin-bottom: 20px;
@@ -451,6 +453,7 @@ footer {
     max-width: 140ch;
     text-align: center;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer h1 {
