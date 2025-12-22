@@ -7,6 +7,8 @@ const closeButton = document.getElementById("closeButton")
 const slides = document.querySelectorAll(".slides img");
 const closeBtn = document.getElementById("closeButton");
 
+
+
 let slideIndex = 0;
 let intervalId = null;
 
@@ -145,6 +147,16 @@ function projectPopup(projectid , projectimage) {
         document.getElementById("projectSiteLink").innerText = "Youtube";
         document.getElementById("projectSocialLink").href = "https://bsky.app/profile/teamultrafix.bsky.social";
         document.getElementById("projectSocialLink").innerText = "Bluesky";
+    }
+    if (projectid === "SonicStrangeDreamWorld"){
+        document.querySelector(".projectDescription").innerText = "";
+        document.getElementById("projectPromo").src = "Resources/3rdParty/SonicStrangeDreamWorld.png";
+        document.getElementById("projectDesc").innerText = "Strange Dream World is a reimagine of Sonic 1 with new graphics, colors, and layouts.";
+        document.getElementById("whoEnvolved").innerText = "";
+        document.getElementById("projectSiteLink").href = "";
+        document.getElementById("projectSiteLink").innerText = "";
+        document.getElementById("projectSocialLink").href = "https://discord.gg/ncvAR4WStr";
+        document.getElementById("projectSocialLink").innerText = "Discord";
     }
 }
 
