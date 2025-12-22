@@ -7,7 +7,15 @@ const closeButton = document.getElementById("closeButton")
 const slides = document.querySelectorAll(".slides img");
 const closeBtn = document.getElementById("closeButton");
 
+//project popup variables
+const projectPopupImage = document.getElementById("projectPopupImage");
 
+const projectDescription = document.querySelector(".projectDescription");
+const projectPromo = document.getElementById("projectPromo");
+const projectDesc = document.getElementById("projectDesc");
+const whoEnvolved = document.getElementById("whoEnvolved");
+const projectSiteLink = document.getElementById("projectSiteLink");
+const projectSocialLink = document.getElementById("projectSocialLink");
 
 let slideIndex = 0;
 let intervalId = null;
@@ -95,68 +103,69 @@ function loadBlueskyEmbed() {
 }
 loadPosts();
 
+// project popup code for text and images
 function projectPopup(projectid , projectimage) {
-    document.getElementById("projectPopupImage").src = projectimage;
+    projectPopupImage.src = projectimage;
 
     if (projectid === "3Air_Eukaryot") {
-        document.querySelector(".projectDescription").innerText = "By Eukaryot";
-        document.getElementById("projectPromo").src = "Resources/3rdParty/3air.png";
-        document.getElementById("projectDesc").innerText = "Sonic 3 A.I.R. is a fan project aimed at making an accurate, reverse-engineered PC port of Sonic 3 & Knuckles. It includes a number of graphical improvements such as 16:9 widescreen (can be changed back to 4:3 or other aspect ratios; see Ultra-widescreen), consistent frame rate, 60 FPS in special stages, smooth sprite rotation, and mod support.";
-        document.getElementById("whoEnvolved").innerText = "This project is a big insperation for our projects, go check it out!";
-        document.getElementById("projectSiteLink").href = "https://sonic3air.org/";
-        document.getElementById("projectSiteLink").innerText = "Project Site";
-        document.getElementById("projectSocialLink").href = "https://bsky.app/profile/eukaryot.bsky.social";
-        document.getElementById("projectSocialLink").innerText = "Bluesky";
+        projectDescription.innerText = "By Eukaryot";
+        projectPromo.src = "Resources/3rdParty/3air.png";
+        projectDesc.innerText = "Sonic 3 A.I.R. is a fan project aimed at making an accurate, reverse-engineered PC port of Sonic 3 & Knuckles. It includes a number of graphical improvements such as 16:9 widescreen (can be changed back to 4:3 or other aspect ratios; see Ultra-widescreen), consistent frame rate, 60 FPS in special stages, smooth sprite rotation, and mod support.";
+        whoEnvolved.innerText = "This project is a big insperation for our projects, go check it out!";
+        projectSiteLink.href = "https://sonic3air.org/";
+        projectSiteLink.innerText = "Project Site";
+        projectSocialLink.href = "https://bsky.app/profile/eukaryot.bsky.social";
+        projectSocialLink.innerText = "Bluesky";
     }
     if (projectid === "DuelofFates_ChaosDriveStudio") {
-        document.querySelector(".projectDescription").innerText = "By Chaos Drive Studio";
-        document.getElementById("projectPromo").src = "Resources/3rdParty/DoF.png";
-        document.getElementById("projectDesc").innerText = "Sonic and the Duel of Fates is a 2D platformer built using the Retro Engine V4 Decompilation, featuring original sprites, levels, badniks, and an original soundtrack. The game follows Sonic and Shadow as they team up to stop a new threat to the world.";
-        document.getElementById("whoEnvolved").innerText = "Led by ProdNW, Chaos Drive Studio includes members and contributions from Team Forever from the likes of AlyStyle and Jamesith!";
-        document.getElementById("projectSiteLink").href = "https://chaosdrivestudio.com/sonic-and-the-duel-of-fates/";
-        document.getElementById("projectSiteLink").innerText = "Project Site";
-        document.getElementById("projectSocialLink").href = "https://bsky.app/profile/prodnw.bsky.social";
-        document.getElementById("projectSocialLink").innerText = "ProdNW on Bluesky";
+        projectDescription.innerText = "By Chaos Drive Studio";
+        projectPromo.src = "Resources/3rdParty/DoF.png";
+        projectDesc.innerText = "Sonic and the Duel of Fates is a 2D platformer built using the Retro Engine V4 Decompilation, featuring original sprites, levels, badniks, and an original soundtrack. The game follows Sonic and Shadow as they team up to stop a new threat to the world.";
+        whoEnvolved.innerText = "Led by ProdNW, Chaos Drive Studio includes members and contributions from Team Forever from the likes of AlyStyle and Jamesith!";
+        projectSiteLink.href = "https://chaosdrivestudio.com/sonic-and-the-duel-of-fates/";
+        projectSiteLink.innerText = "Project Site";
+        projectSocialLink.href = "https://bsky.app/profile/prodnw.bsky.social";
+        projectSocialLink.innerText = "ProdNW on Bluesky";
     }
     if (projectid === "Essence_TeamReDream") {
-        document.querySelector(".projectDescription").innerText = "By Team ReDream";
-        document.getElementById("projectPromo").src = "Resources/3rdParty/Essence.jpg";
-        document.getElementById("projectDesc").innerText = "Sonic Essence is an original 2D Modern Sonic adventure built with the Retro Engine V4 Decompilation. It features completely original sprites, levels, badniks, and an original soundtrack! This project aims to push the potential of Retro Engine (V4) modding to show the fresh and new experiences the decompilation can offer!";
-        document.getElementById("whoEnvolved").innerText = "Led by AlyStyle, Team ReDream includes members and contributions from Team Forever from the likes of Casteor573, Elspeth The Pict, KarlEmerald, Jamesith, and ProdNW!";
-        document.getElementById("projectSiteLink").href = "https://www.youtube.com/@TeamReDream";
-        document.getElementById("projectSiteLink").innerText = "Youtube";
-        document.getElementById("projectSocialLink").href = "https://bsky.app/profile/teamredream.bsky.social";
-        document.getElementById("projectSocialLink").innerText = "Bluesky";
+        projectDescription.innerText = "By Team ReDream";
+        projectPromo.src = "Resources/3rdParty/Essence.jpg";
+        projectDesc.innerText = "Sonic Essence is an original 2D Modern Sonic adventure built with the Retro Engine V4 Decompilation. It features completely original sprites, levels, badniks, and an original soundtrack! This project aims to push the potential of Retro Engine (V4) modding to show the fresh and new experiences the decompilation can offer!";
+        whoEnvolved.innerText = "Led by AlyStyle, Team ReDream includes members and contributions from Team Forever from the likes of Casteor573, Elspeth The Pict, KarlEmerald, Jamesith, and ProdNW!";
+        projectSiteLink.href = "https://www.youtube.com/@TeamReDream";
+        projectSiteLink.innerText = "Youtube";
+        projectSocialLink.href = "https://bsky.app/profile/teamredream.bsky.social";
+        projectSocialLink.innerText = "Bluesky";
     }
     if (projectid === "ManiaAddendum_KiaraGale") {
-        document.querySelector(".projectDescription").innerText = "By Kiara Gale";
-        document.getElementById("projectPromo").src = "Resources/Logos/3rdParty/ManiaAddendum_KiaraGale.png";
-        document.getElementById("projectDesc").innerText = "";
-        document.getElementById("whoEnvolved").innerText = "";
-        document.getElementById("projectSiteLink").href = "";
-        document.getElementById("projectSiteLink").innerText = "";
-        document.getElementById("projectSocialLink").href = "";
-        document.getElementById("projectSocialLink").innerText = "";
+        projectDescription.innerText = "By Kiara Gale";
+        projectPromo.src = "Resources/Logos/3rdParty/ManiaAddendum_KiaraGale.png";
+        projectDesc.innerText = "";
+        whoEnvolved.innerText = "";
+        projectSiteLink.href = "";
+        projectSiteLink.innerText = "";
+        projectSocialLink.href = "";
+        projectSocialLink.innerText = "";
     }
     if (projectid === "OriginsUltrafix_TeamUltrafix") {
-        document.querySelector(".projectDescription").innerText = "By Team Ultrafix";
-        document.getElementById("projectPromo").src = "Resources/3rdParty/ultrafix.png";
-        document.getElementById("projectDesc").innerText = "Sonic Origins Ultrafix is a mod that changes, fixes and adds to various parts of the collection (including its games, the collection menus, and all the other side modes) to bring you the ultimate Origins experience!";
-        document.getElementById("whoEnvolved").innerText = "Both Cosmic Eterntiy and AlyStyle are apart of both teams, and both teams have contributed to each other's projects in the past!";
-        document.getElementById("projectSiteLink").href = "https://www.youtube.com/@TeamUltrafix";
-        document.getElementById("projectSiteLink").innerText = "Youtube";
-        document.getElementById("projectSocialLink").href = "https://bsky.app/profile/teamultrafix.bsky.social";
-        document.getElementById("projectSocialLink").innerText = "Bluesky";
+        projectDescription.innerText = "By Team Ultrafix";
+        projectPromo.src = "Resources/3rdParty/ultrafix.png";
+        projectDesc.innerText = "Sonic Origins Ultrafix is a mod that changes, fixes and adds to various parts of the collection (including its games, the collection menus, and all the other side modes) to bring you the ultimate Origins experience!";
+        whoEnvolved.innerText = "Both Cosmic Eterntiy and AlyStyle are apart of both teams, and both teams have contributed to each other's projects in the past!";
+        projectSiteLink.href = "https://www.youtube.com/@TeamUltrafix";
+        projectSiteLink.innerText = "Youtube";
+        projectSocialLink.href = "https://bsky.app/profile/teamultrafix.bsky.social";
+        projectSocialLink.innerText = "Bluesky";
     }
     if (projectid === "SonicStrangeDreamWorld"){
-        document.querySelector(".projectDescription").innerText = "";
-        document.getElementById("projectPromo").src = "Resources/3rdParty/SonicStrangeDreamWorld.png";
-        document.getElementById("projectDesc").innerText = "Strange Dream World is a reimagine of Sonic 1 with new graphics, colors, and layouts.";
-        document.getElementById("whoEnvolved").innerText = "";
-        document.getElementById("projectSiteLink").href = "";
-        document.getElementById("projectSiteLink").innerText = "";
-        document.getElementById("projectSocialLink").href = "https://discord.gg/ncvAR4WStr";
-        document.getElementById("projectSocialLink").innerText = "Discord";
+        projectDescription.innerText = "";
+        projectPromo.src = "Resources/3rdParty/SonicStrangeDreamWorld.png";
+        projectDesc.innerText = "Strange Dream World is a reimagine of Sonic 1 with new graphics, colors, and layouts.";
+        whoEnvolved.innerText = "";
+        projectSiteLink.href = "";
+        projectSiteLink.innerText = "";
+        projectSocialLink.href = "https://discord.gg/ncvAR4WStr";
+        projectSocialLink.innerText = "Discord";
     }
 }
 
