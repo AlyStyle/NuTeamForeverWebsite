@@ -161,9 +161,9 @@ function projectPopup(projectid , projectimage) {
         projectDescription.innerText = "";
         projectPromo.src = "Resources/3rdParty/SonicStrangeDreamWorld.png";
         projectDesc.innerText = "Strange Dream World is a reimagine of Sonic 1 with new graphics, colors, and layouts.";
-        whoEnvolved.innerText = "";
-        projectSiteLink.href = "";
-        projectSiteLink.innerText = "";
+        whoEnvolved.innerText = "A mod by DarkVampireDude, one of Team Forever's artists!";
+        projectSiteLink.href = "https://gamebanana.com/mods/150213";
+        projectSiteLink.innerText = "Download";
         projectSocialLink.href = "https://discord.gg/ncvAR4WStr";
         projectSocialLink.innerText = "Discord";
     }
