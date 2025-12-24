@@ -468,7 +468,55 @@ footer h1 {
     justify-self: end;
 }
 
+@media only screen and (max-width: 1268px) {
+    .TFHeader img{
+        width: 200px;
+        padding-bottom: 7%;
+    }
 
+    .slider {
+        height: 20vh;
+    }
+
+    .slider button img {
+        width: 30px;
+        height: auto;
+    }
+
+    .intro-text {
+        max-width: 100%;
+        font-size: 100%;
+    }
+
+    .content-section, .third-party-section h2 {
+        max-width: 90%;
+        font-size: 100%;
+        transform: rotate(0deg);
+        margin: -30px auto 40px auto;
+    }
+
+    .social-contact-section {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .socialsTitle, .contactTitle {
+        padding-bottom: 20px;
+    }
+
+    .contactTitle {
+        transform: scaleX(1.9);
+    }
+
+    .projectPopupContent {
+        grid-template-columns: 1fr; 
+        margin: 5vh 5vw;
+    }
+
+    #projectDesc {
+        font-size: 1.2em;
+    }
+}
 
 
 
