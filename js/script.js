@@ -205,9 +205,17 @@ projectPopupDisplay.addEventListener("click", function(event) {
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-})
+    document.querySelector(".menu-overlay").classList.toggle("active");
+});
 
 navLink.forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+    document.querySelector(".menu-overlay").classList.remove("active");
 }))
+
+document.querySelector(".menu-overlay").addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    document.querySelector(".menu-overlay").classList.remove("active");
+});
