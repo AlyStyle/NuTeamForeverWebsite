@@ -20,6 +20,10 @@ const projectSocialLink = document.getElementById("projectSocialLink");
 let slideIndex = 0;
 let intervalId = null;
 
+//mobile menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navMenu");
+const navLink = document.querySelectorAll(".navLink");
 
 function initializeSlider(){
     if (slides.length > 0){
@@ -197,5 +201,13 @@ projectPopupDisplay.addEventListener("click", function(event) {
     }
 });
 
+//hamburger menu
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
 
-
+navLink.forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
