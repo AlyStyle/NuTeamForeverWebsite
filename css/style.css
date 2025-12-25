@@ -64,7 +64,7 @@ html {
 }
 
 header{
-    margin-bottom: 5vh;
+    margin-bottom: 2em;
 }
 
 
@@ -204,14 +204,9 @@ li a {
 .slider{
     position: relative;
     overflow: hidden;
-    height: 50vh;
+    max-height: 55vh;
+    height: 55em;
     width: 100%;
-}
-
-@media (min-width: 1400px) {
-    .slider {
-        height: 30vh;
-    }
 }
 
 #posts {
@@ -475,7 +470,7 @@ footer h1 {
     }
 
     .slider {
-        height: 20vh;
+        height: 20em;
     }
 
     .slider button img {
