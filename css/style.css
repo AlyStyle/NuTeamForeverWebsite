@@ -48,6 +48,13 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    background-image: url("/Resources/BackgroundImage/Home.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
 /* Header styling */
 .TFHeader {
     display: flex;
