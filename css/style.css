@@ -302,8 +302,8 @@ img.displaySlide{
 .card{
     align-content: center;
     flex: 0 0 5em;
-    height: 40vh;
-    width: 70vh;
+    width: 40rem;
+    height: 24rem;
 }
 
 @keyframes spin{
@@ -383,7 +383,7 @@ img.displaySlide{
 }
 
 .projectPopupContent button {
-    background-color: white;
+    background-color: transparent;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -501,7 +501,7 @@ footer h1 {
     }
 
     .socialsTitle, .contactTitle {
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
 
     .contactTitle {
@@ -515,6 +515,11 @@ footer h1 {
 
     #projectDesc {
         font-size: 1.2em;
+    }
+
+    .card{
+        width: 20rem;
+        height: 12rem;
     }
 }
 
