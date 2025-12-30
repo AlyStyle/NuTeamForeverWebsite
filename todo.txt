@@ -10,6 +10,8 @@ add Horror Pack as a game
 
 ABOUT
 -------
+fix text not defaulting to Arial
+fix mobile zooming issues
 
 
 PROJECTS
