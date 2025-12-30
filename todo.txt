@@ -6,6 +6,7 @@ Animated the Back Arrow (make gif, make red alternate for hovered)
 HOME
 -------
 add Horror Pack as a game
+make third party popups mobile friendly
 
 
 ABOUT
