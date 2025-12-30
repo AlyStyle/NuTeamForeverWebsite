@@ -1,6 +1,6 @@
 GENERAL
 -------
-make all 4k images downscaled to 1080
+make all 4k images downscaled to 1080 to stop crashing on mobile
 Animated the Back Arrow (make gif, make red alternate for hovered)
 
 HOME
@@ -16,3 +16,17 @@ fix mobile zooming issues
 
 PROJECTS
 --------
+add other games
+add angry knuckles gif (sonic 3 animation) to bottom of page
+
+
+CONCEPTS
+--------
+Pages left to design:
+Community (GB API Link)
+S1F
+S2A
+ANATC
+SCD
+FAQ
+Credits
