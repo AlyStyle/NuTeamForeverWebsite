@@ -488,6 +488,9 @@ footer h1 {
 }
 
 @media only screen and (max-width: 1268px) {
+    header {
+        margin-bottom: 0;
+    }
     .TFHeader img{
         width: 200px;
         padding-bottom: 7%;
