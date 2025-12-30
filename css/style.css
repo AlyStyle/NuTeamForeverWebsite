@@ -269,6 +269,18 @@ li a {
     object-position: center;
 }
 
+.projectImages{
+    position: relative;
+    width: 100%;
+}
+
+.projectImages img{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+}
+
 .slider button{
     position: absolute;
     top: 50%;
@@ -485,11 +497,11 @@ footer h1 {
     justify-self: end;
 }
 
-#projectHeader{
+.projectBody{
     background-image: url("/Resources/BackgroundImage/Projects-Top.png");
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 100% auto;
+    background-size: 200% auto;
 }
 
 @media only screen and (max-width: 1268px) {
