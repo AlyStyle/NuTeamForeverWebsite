@@ -619,9 +619,8 @@ h2{
 }
 
 .v4Image{
-}
-
-.v4Image img{
+        display: flex;
+        align-items: center;
 }
 
 .sourcecodeTitle {
@@ -631,6 +630,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     text-align: center;
+    margin-bottom: 4vh;
 }
 
 @media only screen and (max-width: 1268px) {
