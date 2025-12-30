@@ -774,7 +774,7 @@ h2{
     }
 
     .selected a {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 
     .navMenu.active{
