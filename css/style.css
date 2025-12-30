@@ -173,6 +173,7 @@ li a {
 .contact-us h2 a{
     color: white;
     text-decoration: underline;
+    text-transform: none;
 }
 
 .letter {
@@ -190,6 +191,8 @@ li a {
     font-size: 1.3em;
     margin-bottom: 10px;
     padding: 3%;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .socialsTitle{
@@ -351,6 +354,8 @@ img.displaySlide{
     margin-bottom: 10px;
     padding: 3%;
     text-align: center;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .third-party-section span {
@@ -502,6 +507,14 @@ footer h1 {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 200% auto;
+}
+
+h2{
+    font-family: "arial-black", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1268px) {
