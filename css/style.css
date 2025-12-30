@@ -446,6 +446,14 @@ img.displaySlide{
     margin: 0 10px;
 }
 
+.popupFirst {
+    grid-column: 1;
+}
+
+.popupSecond {
+    grid-column: 3;
+}
+
 .popupText{
     max-width: 60vh;
     font-size: 1.5em;
@@ -709,7 +717,27 @@ h2{
 
     .projectPopupContent {
         grid-template-columns: 1fr; 
-        margin: 5vh 5vw;
+        margin: 0;
+    }
+
+    .projectPopupContent img {
+        width: 40%;
+    }
+
+    .popupFirst {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .popupSecond {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .popupText {
+        max-width: none;
+        padding-top: 20px;
+        font-size: 1em
     }
 
     #projectDesc {
@@ -820,6 +848,8 @@ h2{
         line-height: 110%;
         text-align: left;
     }
+
+
 
 }
 

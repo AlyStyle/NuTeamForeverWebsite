@@ -1,6 +1,5 @@
 GENERAL
 -------
-make all 4k images downscaled to 1080 to stop crashing on mobile
 Animated the Back Arrow (make gif, make red alternate for hovered)
 
 HOME
@@ -11,8 +10,6 @@ make third party popups mobile friendly
 
 ABOUT
 -------
-fix text not defaulting to Arial
-fix mobile zooming issues
 
 
 PROJECTS
