@@ -25,7 +25,7 @@
 					<li><a class="navLink" href="index.html">Home</a></li>
 					<li class="selected"><a class="navLink" href="about.html">About</a></li>
 					<li><a class="navLink" href="projects.html">Projects</a></li>
-					<li><a class="navLink" href="controller_setup.html">Controller Setup</a></li>
+					<li><a class="navLink" href="community.html">Community</a></li>
 					<li><a class="navLink" href="faq.html">FAQ</a></li>
 					<li><a class="navLink" href="rsds.html">RSDS</a></li>
 					<li><a class="navLink" href="credits.html">Credits</a></li>
@@ -45,7 +45,7 @@
 			</div>
 
 			<section class="aboutSection">
-				<p>In 2011 and 2013, SEGA published mobile versions of Sonic the Hedgehog, Sonic the Hedgehog 2, and Sonic The Hedgehog CD. These were remakes from the ground up of the Mega Drive/Genesis titles by esteemed Sonic hacking community members Christian "Taxman" Whitehead and Simon "Stealth" Thomley, using the Taxman's custom 'Retro Engine'. They could play in a wider screen resolution, 60 frames per second, and even extras like new characters, abilities, and in some cases new levels. These was ported to devices like the Amazon Fire Stick, but by 2021 there was no hope for an official PC or console rerelease.</p>
+				<p>In 2011 and 2013, SEGA published mobile versions of <a target="_blank" href="https://info.sonicretro.org/Sonic_the_Hedgehog_(2013_game)">Sonic the Hedgehog</a>, <a target="_blank" href="https://info.sonicretro.org/Sonic_the_Hedgehog_2_(2013)">Sonic the Hedgehog 2</a>, and <a target="_blank" href="https://info.sonicretro.org/Sonic_the_Hedgehog_CD_(2011)">Sonic The Hedgehog CD</a>. These were remakes from the ground up of the Mega Drive/Genesis titles by esteemed Sonic hacking community members <a target="_blank" href="https://info.sonicretro.org/The_Taxman">Christian "Taxman" Whitehead</a> and <a target="_blank" href="https://segaretro.org/Simon_Thomley">Simon "Stealth" Thomley</a>, using the Taxman's custom 'Retro Engine'. They could play in a wider screen resolution, 60 frames per second, and even extras like new characters, abilities, and in some cases new levels. These was ported to devices like the Amazon Fire Stick, but by 2021 there was no hope for an official PC or console rerelease.</p>
 				<div class="mobileIcons">
 					<img src="Resources/About/Sonic1.webp"></img>
 					<img src="Resources/About/Sonic2.webp"></img>
@@ -55,10 +55,10 @@
 
 			<section class="aboutSection">
 				<div class="rsdkIcons">
-					<img src="Resources/About/v3Logo.png"></img>
-					<img src="Resources/About/v4Logo.png"></img>
+					<img id="v3"></img>
+					<img id="v4"></img>
 				</div>
-				<p>However, in January 2021, RubberDuckyCooly and stxticOVFL, a pair of talented programmers interested in the Retro Engine's inner workings, released a full decompilation of the engine versions these releases were built on. This allowed people to play the games natively on PC, provided you had a copy of the relevant game's data file. RubberDuckyCooly then decompiled the bytecode of the games, allowing modders to change the script to add their own custom features. These were then further updated and polished by members of the Retro Engine modding community to be updated to the versions seen in SEGA’s long-awaited rerelease through Sonic Origins.</p>
+				<p>However, in January 2021, <a target="_blank" href="https://github.com/Rubberduckycooly">RubberDuckyCooly</a> and <a target="_blank" href="https://github.com/stxticOVFL">stxticOVFL</a>, a pair of talented programmers interested in the Retro Engine's inner workings, released a full decompilation of the engine versions these releases were built on. This allowed people to play the games natively on PC, provided you had a copy of the relevant game's data file. RubberDuckyCooly then decompiled the bytecode of the games, allowing modders to change the script to add their own custom features. These were then further updated and polished by members of the Retro Engine modding community to be updated to the versions seen in SEGA’s long-awaited rerelease through <a target="_blank" href="https://info.sonicretro.org/Sonic_Origins">Sonic Origins.</a></p>
 			</section>
 
 			<section class="aboutSection">
@@ -75,19 +75,21 @@
 				<div class="sonicGif">
 					<img src="Resources/About/Sonic.gif"></img>
 				</div>
-				<p>We hope that the work we're doing*, on top of the work others have done to make it possible, lets you experience these unforgettable games in the best way possible.*Because we're not finished just yet!</p>
+				<p>We hope that the work we're doing*, on top of the work others have done to make it possible, lets you experience these unforgettable games in the best way possible.<br><span>*Because we're not finished just yet!</span></p>
 			</section>
 
 			<section class="v4Section">
 				<div>
 					<p>All Team Forever projects* use RSDKv4+: a modified version of the Retro Engine v4 decompilation created by ProdNW. Team Forever has contributed to this engine fork with the changes found in our original engine fork.</p>
 					<p>This modified engine allows content and features not possible with the base decomplication. This includes:</p>
-					<ul>SteamAPI</ul>
-					<ul>Discord Rich Pressence</ul>
-					<ul>Multi-syntax support (Pre-Origins and Current)</ul>
-					<ul>Increased memory for graphics and sound</ul>
-					<ul>More freedom with sprite effects, graphic effects</ul>
-					<p>And many more!</p>
+					<ul>
+						<li>SteamAPI</li>
+						<li>Discord Rich Pressence</li>
+						<li>Multi-syntax support (Pre-Origins and Current)</li>
+						<li>Increased memory for graphics and sound</li>
+						<li>More freedom with sprite effects, graphic effects</li>
+						<li>And many more!</li>
+					</ul>
 					<p>For those interested, the code is open-source, and available here.</p>
 
 					<p>This is just the engine that runs the decompiled games, so it won't run without the game assets. It's forked from the original decompilation by RubberDuckyCooly and RMGRich, which you can find here.</p>

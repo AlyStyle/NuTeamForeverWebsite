@@ -69,6 +69,7 @@ async function loadPosts() {
   const data = await res.json();
 
   const container = document.getElementById("posts");
+  if (!container) return;
   container.innerHTML = ""; // optional reset
 
   data.feed.forEach(item => {
@@ -194,8 +195,8 @@ document.querySelectorAll(".projectInfo").forEach(function (button) {
 	});
 });
 
-closeButton.addEventListener("click", closeProjectPopup);
-projectPopupDisplay.addEventListener("click", function(event) {
+if (closeButton) closeButton.addEventListener("click", closeProjectPopup);
+if (projectPopupDisplay) projectPopupDisplay.addEventListener("click", function(event) {
     if (event.target === projectPopupDisplay) {
         closeProjectPopup();
     }
@@ -219,3 +220,26 @@ document.querySelector(".menu-overlay").addEventListener("click", () => {
     navMenu.classList.remove("active");
     document.querySelector(".menu-overlay").classList.remove("active");
 });
+
+function changeRSDKImage() {
+    const v3Img = document.getElementById('v3');
+    if (v3Img) {
+       if (window.innerWidth <= 1268) {
+           v3Img.src = 'Resources/About/v3Logo_Mobile.png';
+       } else {
+           v3Img.src = 'Resources/About/v3Logo.png';
+       }
+    }
+
+    const v4Img = document.getElementById('v4');
+    if (v4Img) {
+       if (window.innerWidth <= 1268) {
+           v4Img.src = 'Resources/About/v4Logo_Mobile.png';
+       } else {
+           v4Img.src = 'Resources/About/v4Logo.png';
+       }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", changeRSDKImage);
+window.addEventListener('resize', changeRSDKImage);
