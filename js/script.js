@@ -225,7 +225,7 @@ function changeRSDKImage() {
     const v3Img = document.getElementById('v3');
     if (v3Img) {
        if (window.innerWidth <= 1268) {
-           v3Img.src = 'Resources/About/v3Logo_Mobile.png';
+           v3Img.src = 'Resources/About/v3Logo_Mobile.svg';
        } else {
            v3Img.src = 'Resources/About/v3Logo.png';
        }
@@ -234,7 +234,7 @@ function changeRSDKImage() {
     const v4Img = document.getElementById('v4');
     if (v4Img) {
        if (window.innerWidth <= 1268) {
-           v4Img.src = 'Resources/About/v4Logo_Mobile.png';
+           v4Img.src = 'Resources/About/v4Logo_Mobile.svg';
        } else {
            v4Img.src = 'Resources/About/v4Logo.png';
        }
