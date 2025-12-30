@@ -1,4 +1,16 @@
-- Animated the Back Arrow (make gif, make red alternate for hovered)
-- cleanup and polishing of code
-- make text on footer and popup text default to Arial
-- Add horror pack as a game
+GENERAL
+-------
+make all 4k images downscaled to 1080
+Animated the Back Arrow (make gif, make red alternate for hovered)
+
+HOME
+-------
+add Horror Pack as a game
+
+
+ABOUT
+-------
+
+
+PROJECTS
+--------
