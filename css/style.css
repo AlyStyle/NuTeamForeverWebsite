@@ -502,6 +502,13 @@ footer h1 {
     justify-self: end;
 }
 
+.aboutBody{
+    background-image: url("/Resources/BackgroundImage/About.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 200% auto;
+}
+
 .projectBody{
     background-image: url("/Resources/BackgroundImage/Projects-Top.png");
     background-repeat: no-repeat;
