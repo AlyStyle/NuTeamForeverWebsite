@@ -377,6 +377,7 @@ img.displaySlide{
 
 .projectPopupDisplay {
     position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
     top: 0;
     left: 0;
     right: 0;
