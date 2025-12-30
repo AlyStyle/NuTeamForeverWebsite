@@ -536,6 +536,103 @@ h2{
     text-decoration: underline;
 }
 
+.aboutSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 1100px;
+    margin: 10px auto 50px auto;
+    width: 100%;
+    gap: 20px;
+    text-align: justify;
+    line-height: 220%;
+}
+
+.aboutSection p{
+    font-size: 1.5em;
+}
+
+.mobileIcons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.mobileIcons img {
+    width: 30%;
+    height: auto;
+    max-width: 150px;
+}
+
+.rsdkIcons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+    width: 100%;
+}
+
+.rsdkIcons img {
+    max-width: 550px;
+}
+
+.tfIcons{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.tfIcons img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+.sonicGif {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-left: 200px;
+}
+
+.v4Section{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 1100px;
+    margin: -55px auto 0 auto;
+    width: 100%;
+    text-align: justify;
+    line-height: 220%;
+}
+
+.v4Section div{
+    background-color: #000000;
+    color: white;
+    padding: 5%;
+}
+
+.v4Section p{
+    font-size: 1.5em;
+}
+
+.v4Image{
+}
+
+.v4Image img{
+}
+
+.sourcecodeTitle {
+    font-family: "arial-black", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1268px) {
     header {
         margin-bottom: 0;
