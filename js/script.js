@@ -10,7 +10,7 @@ const closeBtn = document.getElementById("closeButton");
 //project popup variables
 const projectPopupImage = document.getElementById("projectPopupImage");
 
-const projectDescription = document.querySelector(".projectDescription");
+const projectAuthor = document.querySelector(".projectAuthor");
 const projectPromo = document.getElementById("projectPromo");
 const projectDesc = document.getElementById("projectDesc");
 const whoEnvolved = document.getElementById("whoEnvolved");
@@ -113,7 +113,7 @@ function projectPopup(projectid , projectimage) {
     projectPopupImage.src = projectimage;
 
     if (projectid === "3Air_Eukaryot") {
-        projectDescription.innerText = "By Eukaryot";
+        projectAuthor.innerText = "By Eukaryot";
         projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/3AIR.png";
         projectDesc.innerText = "Sonic 3 A.I.R. is a fan project aimed at making an accurate, reverse-engineered PC port of Sonic 3 & Knuckles. It includes a number of graphical improvements such as 16:9 widescreen (can be changed back to 4:3 or other aspect ratios; see Ultra-widescreen), consistent frame rate, 60 FPS in special stages, smooth sprite rotation, and mod support.";
         whoEnvolved.innerText = "This project is a big insperation for our projects, go check it out!";
@@ -123,7 +123,7 @@ function projectPopup(projectid , projectimage) {
         projectSocialLink.innerText = "Bluesky";
     }
     if (projectid === "DuelofFates_ChaosDriveStudio") {
-        projectDescription.innerText = "By Chaos Drive Studio";
+        projectAuthor.innerText = "By Chaos Drive Studio";
         projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/DoF.png";
         projectDesc.innerText = "Sonic and the Duel of Fates is a 2D platformer built using the Retro Engine V4 Decompilation, featuring original sprites, levels, badniks, and an original soundtrack. The game follows Sonic and Shadow as they team up to stop a new threat to the world.";
         whoEnvolved.innerText = "Led by ProdNW, Chaos Drive Studio includes members and contributions from Team Forever from the likes of AlyStyle and Jamesith!";
@@ -133,7 +133,7 @@ function projectPopup(projectid , projectimage) {
         projectSocialLink.innerText = "ProdNW on Bluesky";
     }
     if (projectid === "Essence_TeamReDream") {
-        projectDescription.innerText = "By Team ReDream";
+        projectAuthor.innerText = "By Team ReDream";
         projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/Essence.jpg";
         projectDesc.innerText = "Sonic Essence is an original 2D Modern Sonic adventure built with the Retro Engine V4 Decompilation. It features completely original sprites, levels, badniks, and an original soundtrack! This project aims to push the potential of Retro Engine (V4) modding to show the fresh and new experiences the decompilation can offer!";
         whoEnvolved.innerText = "Led by AlyStyle, Team ReDream includes members and contributions from Team Forever from the likes of Casteor573, Elspeth The Pict, KarlEmerald, Jamesith, and ProdNW!";
@@ -143,7 +143,7 @@ function projectPopup(projectid , projectimage) {
         projectSocialLink.innerText = "Bluesky";
     }
     if (projectid === "ManiaAddendum_KiaraGale") {
-        projectDescription.innerText = "By Kiara Gale";
+        projectAuthor.innerText = "By Kiara Gale";
         projectPromo.src = "../Resources/Logos/3rdParty/ManiaAddendum_KiaraGale.png";
         projectDesc.innerText = "";
         whoEnvolved.innerText = "";
@@ -153,7 +153,7 @@ function projectPopup(projectid , projectimage) {
         projectSocialLink.innerText = "";
     }
     if (projectid === "OriginsUltrafix_TeamUltrafix") {
-        projectDescription.innerText = "By Team Ultrafix";
+        projectAuthor.innerText = "By Team Ultrafix";
         projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/Ultrafix.png";
         projectDesc.innerText = "Sonic Origins Ultrafix is a mod that changes, fixes and adds to various parts of the collection (including its games, the collection menus, and all the other side modes) to bring you the ultimate Origins experience!";
         whoEnvolved.innerText = "Both Cosmic Eterntiy and AlyStyle lead both teams, as well as both teams have contributed to each other's projects in the past!";
@@ -163,7 +163,7 @@ function projectPopup(projectid , projectimage) {
         projectSocialLink.innerText = "Bluesky";
     }
     if (projectid === "SonicStrangeDreamWorld"){
-        projectDescription.innerText = "";
+        projectAuthor.innerText = "";
         projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/SDW.jpg";
         projectDesc.innerText = "Strange Dream World is a reimagine of Sonic 1 with new graphics, colors, and layouts. Sonic is reliving his first adventure but in a different way than he remember. A colorful like but in a strange way, like a dream?? Where colors are different and badniks are more scarier than ever?! That's not how Sonic remember South Island like that! Could that mean Dr. Eggman be up to no good again? Guide Sonic in this new dream world adventure where anything can happen!";
         whoEnvolved.innerText = "A mod by DarkVampireDude, one of Team Forever's artists!";
