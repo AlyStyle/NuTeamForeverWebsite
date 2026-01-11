@@ -395,7 +395,7 @@ html {
     max-width: 1100px;
     margin: -55px auto 0 auto;
     width: 100%;
-    text-align: justify;
+    text-align: left;
     line-height: 220%;
 }
 .v4Section p{
@@ -411,7 +411,7 @@ html {
     display: list-item;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    font-size: 1em;
+    font-size: 1.5em;
     transform: scaleY(1);
     list-style-type: circle;
     list-style: none;
@@ -501,6 +501,9 @@ html {
 .TFcarousel {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+.TFcarousel img {
+    width: 100%;
 }
 
 .TFimages{
@@ -718,7 +721,7 @@ img.displaySlide{
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: spin 30s infinite linear;
+    animation: spin 30s infinite linear; /* this controls the speed of the scroll */
     padding-right: 1em;
 }
 
