@@ -1,0 +1,22 @@
+Alexander (Allie) Pinnell
+----------------------------
+Concepted and finalized the overall website design and layout.
+Created initial HTML and CSS structure for all pages.
+Implemented navigation bar and footer bar across all pages.
+Implemented Bluesky API integration for displaying latest posts on 'Home' page.
+Implemented 'Home' page concept design into proper HTML and CSS structure.
+Styled and cleaned up third party project popup design and functionality.
+Implemented 'About' page concept design into proper HTML and CSS structure.
+
+Emma Sauve
+----------------------------
+Coded the masthead on home page, including JavaScript and CSS animations to allow automated cycling through different images.
+Coded scrolling carosel for:
+    - featured third project projects on homepage.
+    - screenshots of project on each dedicated project page
+Coded hamburger menu for mobile view.
+Coded background image elements for all pages
+Implemented 'Projects' page concept design into proper HTML and CSS structure.
+General cleanup of HTML, CSS and JavaScript across all pages.
+Implemented base design for the dedicated project pages.
+Coded third party project popup logic.
