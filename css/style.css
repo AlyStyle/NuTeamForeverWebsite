@@ -607,6 +607,13 @@ html {
 }
 
 
+.s1fbody{
+    background-image: url("../Resources/BackgroundImage/Home.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+}
+
 /* Header styling */
 .TFHeader {
     display: flex;
