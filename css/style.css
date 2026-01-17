@@ -508,10 +508,13 @@ html {
 
 .TFimages{
     display: flex;
-    width: 30em;
-    height: 30em;
-    padding-left: 6vh; 
+    justify-content: center;
+    align-items: center;
+    width: 5vh;
+    height: auto;
+    flex-wrap: wrap;
 }
+
 
 .TFgif {
     display: block;
@@ -554,6 +557,10 @@ html {
 }
 .contentDiv1 a{
     background-color: #000000;
+}
+.contentDiv1 button{
+    margin-bottom: 5vh;
+    rotate: -7deg;
 }
 
 .contentDiv2 { 
@@ -608,9 +615,9 @@ html {
 
 
 .s1fbody{
-    background-image: url("../Resources/BackgroundImage/Home.png");
+    background-image: url("../Resources/BackgroundImage/S1F-1.png"), url("../Resources/BackgroundImage/S1F-2.png");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom center, top;
     background-size: 100% auto;
 }
 
