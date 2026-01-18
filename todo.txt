@@ -21,15 +21,9 @@ add angry knuckles gif (sonic 3 animation) to bottom of page
 SONIC 1 FOREVER PAGE
 --------------------
 Make screenshots clickable, opening up a full view image (like the third party popups)
-Space out the download buttons, and center them (try rotating them)
-put in correct background images
-center and scale top logo correctly
 
 
 CONCEPTS
 --------
 Pages left to design:
-Community (GB API Link)
-SCD
-FAQ
 Credits
