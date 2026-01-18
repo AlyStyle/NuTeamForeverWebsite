@@ -560,6 +560,7 @@ html {
 
 .buttonsAlignment{
     display: flex;
+    justify-content: center;
 }
 
 .verNum{
