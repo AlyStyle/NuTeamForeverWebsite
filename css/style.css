@@ -510,11 +510,21 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5vh;
-    height: auto;
+    width: 100%;
     flex-wrap: wrap;
 }
 
+.topLogos{
+    padding: 2em;
+}
+
+
+.TFimages img {
+    width: 50%;      
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(20px 10px #fff)
+}
 
 .TFgif {
     display: block;
@@ -548,9 +558,18 @@ html {
     gap: 3vh;
 }
 
+.buttonsAlignment{
+    display: flex;
+}
+
+.verNum{
+    width: 100%;
+}
+
 .contentDiv1 { 
     grid-area: 1 / 1 / 2 / 2;    
     padding: 3vh;
+    align-items: center;
 }
 .contentDiv1 div{ 
     display: flex;
