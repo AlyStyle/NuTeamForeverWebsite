@@ -479,6 +479,7 @@ html {
     grid-row-gap: 3vh;
     line-height: 1.5em;
 }
+
 .TFcontent p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
@@ -489,6 +490,7 @@ html {
     font-size: 3.3em;
     text-align: center;
     margin-bottom: 2vh;
+    line-height: 1em;
 }
 .TFcontent h4{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -523,7 +525,7 @@ html {
     width: 50%;      
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(20px 10px #fff)
+    filter: drop-shadow(0.5vh 0.6vw #fff);
 }
 
 .TFgif {
@@ -567,50 +569,57 @@ html {
     width: 100%;
 }
 
-.contentDiv1 { 
+.buttonsDiv { 
     grid-area: 1 / 1 / 2 / 2;    
     padding: 3vh;
     align-items: center;
 }
-.contentDiv1 div{ 
+.buttonsDiv div{ 
     display: flex;
 }
-.contentDiv1 a{
+.buttonsDiv a{
     background-color: #000000;
 }
-.contentDiv1 button{
+.buttonsDiv button{
     margin-bottom: 5vh;
     rotate: -7deg;
 }
 
-.contentDiv2 { 
+.contentDiv { 
     background-color: #000000;
     padding: 3vh;
+    text-align: center;
+    line-height: 2em;
+    align-self: center;
 }
 
-.contentDiv3 { 
+.contentDivWindows { 
     background-color: #000000;
     padding: 3vh;
+    text-align: center;
+    line-height: 2em;
+    align-self: center;
 }
 
-.contentDiv4 { 
-    grid-area: 1 / 2 / 2 / 3; 
-    background-color: #000000;
+.seperateDiv2 {
+    grid-area: 1 / 2 / 2 / 3;   
     padding: 3vh;
-}
-.contentDiv4 p{
-    padding: 5vh;
+    display: grid;
+    gap: 3vh;
+    margin-top: -5vh;
 }
 
-.contentDiv5 { 
+.seperateDiv3 {
     grid-area: 2 / 2 / 3 / 3; 
-    background-color: #000000;
     padding: 3vh;
-    align-items: center;
+    display: grid;
+    gap: 3vh;
 }
-.contentDiv5 p{
-    padding-left: 3vh;
-    padding-right: 3vh;
+
+.seperateDiv3 span {
+    font-weight: bold;
+    font-size: small;
+    gap: 1vh;
 }
 
 .downloadButton{
@@ -994,5 +1003,55 @@ footer h1 {
     .v4Section {
         line-height: 110%;
         text-align: left;
+    }
+
+    .buttonsAlignment {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .topLogos {
+        padding: 0em;
+        margin-top: -3em;
+        margin-left: 1em;
+    }
+
+    .verNum {
+        width: 51%;
+        margin-top: -1em;
+    }
+
+    .buttonsDiv button {
+        margin-bottom: 2vh;
+        rotate: 0deg;
+    }
+
+    .downloadButton p {
+        font-size: 200%;
+        line-height: 40px;
+    }
+
+    .downloadButton img {
+        width: 80px;
+        height: 80px;
+        margin-top: 4px;
+    }
+
+        .TFcontent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seperateDiv {
+        order: 2;
+    }
+
+    .seperateDiv2 {
+        order: 1;
+    }
+
+    .seperateDiv3 {
+        order: 3;
     }
 }
