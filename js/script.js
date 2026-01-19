@@ -163,7 +163,7 @@ function projectPopup(projectid , projectimage) {
         projectSocialLink.innerText = "Bluesky";
     }
     if (projectid === "SonicStrangeDreamWorld"){
-        projectAuthor.innerText = "";
+        projectAuthor.innerText = "by DarkVampireDude";
         projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/SDW.jpg";
         projectDesc.innerText = "Strange Dream World is a reimagine of Sonic 1 with new graphics, colors, and layouts. Sonic is reliving his first adventure but in a different way than he remember. A colorful like but in a strange way, like a dream?? Where colors are different and badniks are more scarier than ever?! That's not how Sonic remember South Island like that! Could that mean Dr. Eggman be up to no good again? Guide Sonic in this new dream world adventure where anything can happen!";
         whoEnvolved.innerText = "A mod by DarkVampireDude, one of Team Forever's artists!";
@@ -171,6 +171,56 @@ function projectPopup(projectid , projectimage) {
         projectSiteLink.innerText = "Download";
         projectSocialLink.href = "https://discord.gg/ncvAR4WStr";
         projectSocialLink.innerText = "Discord";
+    }
+    if (projectid === "AmyGalore"){
+        projectAuthor.innerText = "by Team Galore";
+        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/AmyGalore.jpg";
+        projectDesc.innerText = "Sonic 3 AIR's most customizable version of Amy Rose, brought to the scene by Team Galore! Many sprite styles, many movesets, and so much more packed into a single mod!";
+        whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
+        projectSiteLink.href = "";
+        projectSiteLink.innerText = "Download";
+        projectSocialLink.href = "";
+        projectSocialLink.innerText = "Discord";
+    }
+    if (projectid === "MetalMadness"){
+        projectAuthor.innerText = "by Team Galore";
+        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/MetalMadness.jpg";
+        projectDesc.innerText = "Team Galore's Metal Sonic brings him to limelight! Customize his paintjob and abilities to make the most out of his Angel Island simulation.";
+        whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
+        projectSiteLink.href = "";
+        projectSiteLink.innerText = "Download";
+        projectSocialLink.href = "";
+        projectSocialLink.innerText = "Discord";
+    }
+    if (projectid === "DuoMania"){
+        projectAuthor.innerText = "by Team Galore";
+        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/DuoMania.jpg";
+        projectDesc.innerText = "Mighty and Ray come back to Angel Island after their time in Sonic Mania Plus to have fun! Team Galore's take on the duo brings customizable movesets inspired by different fangames and non-Sonic games for Mighty and Ray!";
+        whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
+        projectSiteLink.href = "";
+        projectSiteLink.innerText = "Download";
+        projectSocialLink.href = "";
+        projectSocialLink.innerText = "Discord";
+    }
+    if (projectid === "MarioMayhem"){
+        projectAuthor.innerText = "by Team Galore";
+        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/MarioMayhem.jpg";
+        projectDesc.innerText = "Team Galore bring Mario and Luigi to Angel Island with gameplay as close to real Mario as it can get! Traverse through the original environments with all-new gameplay and mechanics pulled from the Mario series, using existing mechanics with the plumbers' arsenal to work your way around the game!";
+        whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
+        projectSiteLink.href = "";
+        projectSiteLink.innerText = "Download";
+        projectSocialLink.href = "";
+        projectSocialLink.innerText = "Discord";
+    }
+    if (projectid === "HorrorPack"){
+        projectAuthor.innerText = "by Casteor573";
+        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/HorrorPack.jpg";
+        projectDesc.innerText = "";
+        whoEnvolved.innerText = "Some members of Team Forever, including Casteor and MattM4nia, worked on this mod! The mod is also built on Sonic 1 Forever";
+        projectSiteLink.href = "";
+        projectSiteLink.innerText = "Download";
+        projectSocialLink.href = "";
+        projectSocialLink.innerText = "Discord";      
     }
 }
 
@@ -247,7 +297,7 @@ window.addEventListener('resize', changeRSDKImage);
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
     if (ver){
-        ver.innerText = '0.1.20260119.1029a'
+        ver.innerText = '0.1.20260119.1103a'
     }
 }
 document.addEventListener("DOMContentLoaded", versionNumber);
