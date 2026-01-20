@@ -222,6 +222,12 @@ html {
     filter: drop-shadow(9px 6px #000000);
 }
 
+.projectInfo-Alt {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* Home Page (Project Popup) */
 .projectPopupDisplay {
