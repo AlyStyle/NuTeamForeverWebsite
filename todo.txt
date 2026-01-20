@@ -5,6 +5,8 @@ Animated the Back Arrow (make gif, make red alternate for hovered)
 HOME
 -------
 make third party popups mobile friendly
+Look into random third party logo order
+add Super Mario Bros Remastered
 
 
 ABOUT
