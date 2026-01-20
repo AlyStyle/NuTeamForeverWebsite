@@ -648,9 +648,29 @@ html {
     padding: 5px;
 }
 
-
 .s1fbody{
     background-image: url("../Resources/BackgroundImage/S1F-1.png"), url("../Resources/BackgroundImage/S1F-2.png");
+    background-repeat: no-repeat;
+    background-position: bottom center, top;
+    background-size: cover, 100% auto;
+}
+
+.s2abody{
+    background-image: url("../Resources/BackgroundImage/S2A-1.png"), url("../Resources/BackgroundImage/S2A-2.png");
+    background-repeat: no-repeat;
+    background-position: bottom center, top;
+    background-size: cover, 100% auto;
+}
+
+.sCDibody{
+    background-image: url("../Resources/BackgroundImage/SCDI-1.png"), url("../Resources/BackgroundImage/SCDI-2.png");
+    background-repeat: no-repeat;
+    background-position: bottom center, top;
+    background-size: cover, 100% auto;
+}
+
+.ANATCbody{
+    background-image: url("../Resources/BackgroundImage/ANATC-1.png"), url("../Resources/BackgroundImage/ANATC-2.png");
     background-repeat: no-repeat;
     background-position: bottom center, top;
     background-size: cover, 100% auto;
