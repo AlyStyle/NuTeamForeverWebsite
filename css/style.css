@@ -653,7 +653,7 @@ html {
     background-image: url("../Resources/BackgroundImage/S1F-1.png"), url("../Resources/BackgroundImage/S1F-2.png");
     background-repeat: no-repeat;
     background-position: bottom center, top;
-    background-size: 100% auto;
+    background-size: cover, 100% auto;
 }
 
 /* Header styling */
