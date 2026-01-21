@@ -215,12 +215,12 @@ function projectPopup(projectid , projectimage) {
     if (projectid === "HorrorPack"){
         projectAuthor.innerText = "by Casteor573";
         projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/HorrorPack.jpg";
-        projectDesc.innerText = "";
-        whoEnvolved.innerText = "Some members of Team Forever, including Casteor and MattM4nia, worked on this mod! The mod is also built on Sonic 1 Forever";
-        projectSiteLink.href = "";
+        projectDesc.innerText = "The S1F Horror Pack is a horror mod combines two of my previous mods Slenderman in S1F and FNAF in S1F into one pack! Also adds some new content too.";
+        whoEnvolved.innerText = "Created by Casteor573, this project also features contributions from other Team Forever members from the likes of AlyStyle, KarlEmerald, MattM4nia, and WorksOfMagic!";
+        projectSiteLink.href = "https://gamebanana.com/mods/635073";
         projectSiteLink.innerText = "Download";
-        projectSocialLink.href = "";
-        projectSocialLink.innerText = "Discord";      
+        projectSocialLink.href = "https://youtu.be/bx4IWyDeXF0";
+        projectSocialLink.innerText = "Trailer";      
     }
     if (projectid === "SMBR"){
         projectAuthor.innerText = "by ???";
