@@ -510,9 +510,7 @@ html {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.TFcarousel img {
-    width: 100%;
-}
+
 
 .TFimages{
     display: flex;
@@ -808,8 +806,7 @@ img.displaySlide{
 .card{
     align-content: center;
     flex: 0 0 5em;
-    width: 40rem;
-    height: 24rem;
+    height: 600px;
 }
 
 @keyframes spin{
