@@ -19,10 +19,11 @@ add other games
 add angry knuckles gif (sonic 3 animation) to bottom of page
 
 
-SONIC 1 FOREVER PAGE
+GAME PAGES
 --------------------
-fix background for mobile
 Make screenshots clickable, opening up a full view image (like the third party popups)
+Sonic CD - fix the character gifs at bottom
+figure out why screenshots scroll sometimes slow and sometimes not
 
 
 CONCEPTS

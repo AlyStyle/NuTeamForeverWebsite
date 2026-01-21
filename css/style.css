@@ -676,6 +676,13 @@ html {
     background-size: cover, 100% auto;
 }
 
+.mulitpleImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
 /* Header styling */
 .TFHeader {
     display: flex;
