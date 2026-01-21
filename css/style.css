@@ -663,7 +663,7 @@ html {
 }
 
 .sCDibody{
-    background-image: url("../Resources/BackgroundImage/SCDI-1.png"), url("../Resources/BackgroundImage/SCDI-2.png");
+    background-image: url("../Resources/BackgroundImage/SCDi-1.png"), url("../Resources/BackgroundImage/SCDi-2.png");
     background-repeat: no-repeat;
     background-position: bottom center, top;
     background-size: cover, 100% auto;
