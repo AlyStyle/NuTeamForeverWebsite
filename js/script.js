@@ -114,7 +114,7 @@ function projectPopup(projectid , projectimage) {
 
     if (projectid === "3Air_Eukaryot") {
         projectAuthor.innerText = "By Eukaryot";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/3AIR.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/3AIR.png";
         projectDesc.innerText = "Sonic 3 A.I.R. is a fan project aimed at making an accurate, reverse-engineered PC port of Sonic 3 & Knuckles. It includes a number of graphical improvements such as 16:9 widescreen (can be changed back to 4:3 or other aspect ratios; see Ultra-widescreen), consistent frame rate, 60 FPS in special stages, smooth sprite rotation, and mod support.";
         whoEnvolved.innerText = "This project is a big insperation for our projects, go check it out!";
         projectSiteLink.href = "https://sonic3air.org/";
@@ -124,7 +124,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "DuelofFates_ChaosDriveStudio") {
         projectAuthor.innerText = "By Chaos Drive Studio";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/DoF.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/DoF.png";
         projectDesc.innerText = "Sonic and the Duel of Fates is a 2D platformer built using the Retro Engine V4 Decompilation, featuring original sprites, levels, badniks, and an original soundtrack. The game follows Sonic and Shadow as they team up to stop a new threat to the world.";
         whoEnvolved.innerText = "Led by ProdNW, Chaos Drive Studio includes members and contributions from Team Forever from the likes of AlyStyle and Jamesith!";
         projectSiteLink.href = "https://chaosdrivestudio.com/sonic-and-the-duel-of-fates/";
@@ -134,7 +134,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "Essence_TeamReDream") {
         projectAuthor.innerText = "By Team ReDream";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/Essence.jpg";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/Essence.jpg";
         projectDesc.innerText = "Sonic Essence is an original 2D Modern Sonic adventure built with the Retro Engine V4 Decompilation. It features completely original sprites, levels, badniks, and an original soundtrack! This project aims to push the potential of Retro Engine (V4) modding to show the fresh and new experiences the decompilation can offer!";
         whoEnvolved.innerText = "Led by AlyStyle, Team ReDream includes members and contributions from Team Forever from the likes of Casteor573, Elspeth The Pict, KarlEmerald, Jamesith, and ProdNW!";
         projectSiteLink.href = "https://www.youtube.com/@TeamReDream";
@@ -144,7 +144,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "ManiaAddendum_KiaraGale") {
         projectAuthor.innerText = "By Kiara Gale";
-        projectPromo.src = "../Resources/Logos/3rdParty/ManiaAddendum_KiaraGale.png";
+        projectPromo.src = "Resources/Logos/3rdParty/ManiaAddendum_KiaraGale.png";
         projectDesc.innerText = "";
         whoEnvolved.innerText = "";
         projectSiteLink.href = "";
@@ -154,7 +154,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "OriginsUltrafix_TeamUltrafix") {
         projectAuthor.innerText = "By Team Ultrafix";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/Ultrafix.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/Ultrafix.png";
         projectDesc.innerText = "Sonic Origins Ultrafix is a mod that changes, fixes and adds to various parts of the collection (including its games, the collection menus, and all the other side modes) to bring you the ultimate Origins experience!";
         whoEnvolved.innerText = "Both Cosmic Eterntiy and AlyStyle lead both teams, as well as both teams have contributed to each other's projects in the past!";
         projectSiteLink.href = "https://www.youtube.com/@TeamUltrafix";
@@ -164,7 +164,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "SonicStrangeDreamWorld"){
         projectAuthor.innerText = "by DarkVampireDude";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/SDW.jpg";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/SDW.jpg";
         projectDesc.innerText = "Strange Dream World is a reimagine of Sonic 1 with new graphics, colors, and layouts. Sonic is reliving his first adventure but in a different way than he remember. A colorful like but in a strange way, like a dream?? Where colors are different and badniks are more scarier than ever?! That's not how Sonic remember South Island like that! Could that mean Dr. Eggman be up to no good again? Guide Sonic in this new dream world adventure where anything can happen!";
         whoEnvolved.innerText = "A mod by DarkVampireDude, one of Team Forever's artists!";
         projectSiteLink.href = "https://gamebanana.com/mods/150213";
@@ -174,7 +174,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "AmyGalore"){
         projectAuthor.innerText = "by Team Galore";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/AmyGalore.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/AmyGalore.png";
         projectDesc.innerText = "Sonic 3 AIR's most customizable version of Amy Rose, brought to the scene by Team Galore! Many sprite styles, many movesets, and so much more packed into a single mod!";
         whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
         projectSiteLink.href = "";
@@ -184,7 +184,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "MetalMadness"){
         projectAuthor.innerText = "by Team Galore";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/MetalMadness.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/MetalMadness.png";
         projectDesc.innerText = "Team Galore's Metal Sonic brings him to limelight! Customize his paintjob and abilities to make the most out of his Angel Island simulation.";
         whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
         projectSiteLink.href = "";
@@ -194,7 +194,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "DuoMania"){
         projectAuthor.innerText = "by Team Galore";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/DuoMania.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/DuoMania.png";
         projectDesc.innerText = "Mighty and Ray come back to Angel Island after their time in Sonic Mania Plus to have fun! Team Galore's take on the duo brings customizable movesets inspired by different fangames and non-Sonic games for Mighty and Ray!";
         whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
         projectSiteLink.href = "";
@@ -204,7 +204,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "MarioMayhem"){
         projectAuthor.innerText = "by Team Galore";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/MarioMayhem.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/MarioMayhem.png";
         projectDesc.innerText = "Team Galore bring Mario and Luigi to Angel Island with gameplay as close to real Mario as it can get! Traverse through the original environments with all-new gameplay and mechanics pulled from the Mario series, using existing mechanics with the plumbers' arsenal to work your way around the game!";
         whoEnvolved.innerText = "Some members of Team Forever have contributed to this mod, including AlyStyle and nabbup, and we are also personally big fans of the team's work!";
         projectSiteLink.href = "";
@@ -214,7 +214,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "HorrorPack"){
         projectAuthor.innerText = "by Casteor573";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/HorrorPack.jpg";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/HorrorPack.jpg";
         projectDesc.innerText = "";
         whoEnvolved.innerText = "Some members of Team Forever, including Casteor and MattM4nia, worked on this mod! The mod is also built on Sonic 1 Forever";
         projectSiteLink.href = "";
@@ -224,7 +224,7 @@ function projectPopup(projectid , projectimage) {
     }
     if (projectid === "SMBR"){
         projectAuthor.innerText = "by ???";
-        projectPromo.src = "../Resources/Home/ThirdParty/Thumbnails/SMBR.png";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/SMBR.png";
         projectDesc.innerText = "";
         whoEnvolved.innerText = "";
         projectSiteLink.href = "";
