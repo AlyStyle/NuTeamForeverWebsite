@@ -318,6 +318,60 @@ function changeRSDKImage() {
     }
 }
 
+const group = document.getElementById("logoGroup");
+const items = Array.from(group.children);
+
+if (group.getAttribute("data-random") !== "noRandom") {
+    for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+    }
+}
+
+group.innerHTML = "";
+items.forEach(item => group.appendChild(item));
+
+items.forEach(item => {
+  const clone = item.cloneNode(true);
+  group.appendChild(clone);
+});
+
+let offset = 0;
+let speed = 0;
+let maxSpeed = 10;
+const acceleration = 0.5;
+let hovering = false;
+
+function scrollLoop() {
+    const isPopupVisible = projectPopupDisplay && projectPopupDisplay.classList.contains("active");
+
+    const paused = hovering || isPopupVisible;
+
+    if (!paused) {
+        speed = Math.min(speed + acceleration, maxSpeed);
+    } else {
+        speed = Math.max(speed - acceleration, 0);
+    }
+
+    offset -= speed;
+
+    if (Math.abs(offset) >= group.scrollWidth / 2) {
+        offset = 0;
+    }
+    group.style.transform = `translate3d(${offset}px, 0, 0)`;
+
+    requestAnimationFrame(scrollLoop);
+}
+scrollLoop();
+
+group.parentElement.addEventListener("mouseenter", () => {
+    hovering = true;
+});
+group.parentElement.addEventListener("mouseleave", () => {
+    hovering = false;
+});
+
+
 document.addEventListener("DOMContentLoaded", changeRSDKImage);
 window.addEventListener('resize', changeRSDKImage);
 

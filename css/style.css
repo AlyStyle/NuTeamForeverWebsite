@@ -784,18 +784,16 @@ img.displaySlide{
 }
 
 .carousel{
-    display: flex;
-    overflow-x: auto;
-    overflow: hidden;
-    margin-bottom: 3vh;
+  overflow: hidden;
+  width: 100%;
 }
 
 .group{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
-    animation: spin 30s infinite linear; /* this controls the speed of the scroll */
+    gap: 3rem;
+    width: max-content;
+    
     padding-right: 1em;
 }
 
@@ -805,18 +803,11 @@ img.displaySlide{
 
 .card{
     align-content: center;
-    flex: 0 0 5em;
+    flex: 0 0 360px;
     height: 600px;
 }
 
-@keyframes spin{
-    from {
-        translate: 0;
-    }
-    to {
-        translate: -100%;
-    }
-}
+
 
 h2{
     font-family: "arial-black", sans-serif;
