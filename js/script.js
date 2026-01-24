@@ -319,57 +319,106 @@ function changeRSDKImage() {
 }
 
 const group = document.getElementById("logoGroup");
-const items = Array.from(group.children);
+if (group) {
+    const items = Array.from(group.children);
 
-if (group.getAttribute("data-random") !== "noRandom") {
-    for (let i = items.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [items[i], items[j]] = [items[j], items[i]];
+    if (group.getAttribute("data-random") !== "noRandom") {
+        for (let i = items.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [items[i], items[j]] = [items[j], items[i]];
+        }
     }
+
+    group.innerHTML = "";
+    items.forEach(item => group.appendChild(item));
+
+    items.forEach(item => {
+    const clone = item.cloneNode(true);
+    group.appendChild(clone);
+    });
+
+    let offset = 0;
+    let speed = 0;
+    let maxSpeed = 10;
+    const acceleration = 0.5;
+    let hovering = false;
+
+    function scrollLoop() {
+        const isPopupVisible = projectPopupDisplay && projectPopupDisplay.classList.contains("active");
+
+        const paused = hovering || isPopupVisible;
+
+        if (!paused) {
+            speed = Math.min(speed + acceleration, maxSpeed);
+        } else {
+            speed = Math.max(speed - acceleration, 0);
+        }
+
+        offset -= speed;
+
+        if (Math.abs(offset) >= group.scrollWidth / 2) {
+            offset = 0;
+        }
+        group.style.transform = `translate3d(${offset}px, 0, 0)`;
+
+        requestAnimationFrame(scrollLoop);
+    }
+    scrollLoop();
+
+    group.parentElement.addEventListener("mouseenter", () => {
+        hovering = true;
+    });
+    group.parentElement.addEventListener("mouseleave", () => {
+        hovering = false;
+    });
 }
 
-group.innerHTML = "";
-items.forEach(item => group.appendChild(item));
 
-items.forEach(item => {
-  const clone = item.cloneNode(true);
-  group.appendChild(clone);
-});
 
-let offset = 0;
-let speed = 0;
-let maxSpeed = 10;
-const acceleration = 0.5;
-let hovering = false;
+const filterButton1F = document.getElementById('filter-1F');
+const filterButton2A = document.getElementById('filter-2A');
+const filterButtonANATC = document.getElementById('filter-ANATC');
+const filterButtonCDi = document.getElementById('filter-CDi');
 
-function scrollLoop() {
-    const isPopupVisible = projectPopupDisplay && projectPopupDisplay.classList.contains("active");
+const filterImg1F = filterButton1F.querySelector('img');
+const filterImg2A = filterButton2A.querySelector('img');
+const filterImgANATC = filterButtonANATC.querySelector('img');
+const filterImgCDi = filterButtonCDi.querySelector('img');
 
-    const paused = hovering || isPopupVisible;
-
-    if (!paused) {
-        speed = Math.min(speed + acceleration, maxSpeed);
-    } else {
-        speed = Math.max(speed - acceleration, 0);
+filterButton1F.addEventListener('click', (e) => {
+    if (filterImg1F.src.includes('1F_Unselected.png')) {
+        filterImg1F.src = 'Resources/Community/1F_Selected.png';
+        filterImg2A.src = 'Resources/Community/2A_Unselected.png';
+        filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
+        filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
     }
-
-    offset -= speed;
-
-    if (Math.abs(offset) >= group.scrollWidth / 2) {
-        offset = 0;
+});
+filterButton2A.addEventListener('click', (e) => {
+    if (filterImg2A.src.includes('2A_Unselected.png')) {
+        filterImg1F.src = 'Resources/Community/1F_Unselected.png';
+        filterImg2A.src = 'Resources/Community/2A_Selected.png';
+        filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
+        filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
     }
-    group.style.transform = `translate3d(${offset}px, 0, 0)`;
-
-    requestAnimationFrame(scrollLoop);
-}
-scrollLoop();
-
-group.parentElement.addEventListener("mouseenter", () => {
-    hovering = true;
 });
-group.parentElement.addEventListener("mouseleave", () => {
-    hovering = false;
+filterButtonANATC.addEventListener('click', (e) => {
+    if (filterImgANATC.src.includes('ANATC_Unselected.png')) {
+        filterImg1F.src = 'Resources/Community/1F_Unselected.png';
+        filterImg2A.src = 'Resources/Community/2A_Unselected.png';
+        filterImgANATC.src = 'Resources/Community/ANATC_Selected.png';
+        filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
+
+    }
 });
+filterButtonCDi.addEventListener('click', (e) => {
+    if (filterImgCDi.src.includes('CDi_Unselected.png')) {
+        filterImg1F.src = 'Resources/Community/1F_Unselected.png';
+        filterImg2A.src = 'Resources/Community/2A_Unselected.png';
+        filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
+        filterImgCDi.src = 'Resources/Community/CDi_Selected.png';
+    }
+});
+
 
 
 document.addEventListener("DOMContentLoaded", changeRSDKImage);
@@ -378,7 +427,7 @@ window.addEventListener('resize', changeRSDKImage);
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
     if (ver){
-        ver.innerText = '0.1.20260120.0721p'
+        ver.innerText = '0.1.20260124.1204a'
     }
 }
 document.addEventListener("DOMContentLoaded", versionNumber);

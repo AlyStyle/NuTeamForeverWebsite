@@ -126,7 +126,7 @@ html {
     letter-spacing: 0.5rem;
 }
 
-.social-links {
+.social-links, .modIcons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -679,6 +679,41 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}
+
+/* Community Page */
+.communityBody{
+    background-image: url("../Resources/BackgroundImage/Community.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}
+
+.communityTitle {
+    background-color: #000000;
+    padding: 0.5%;
+    margin-top: 2vh;
+}
+.communityTitle h4 {
+    font-family: PenumbraSansStd, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 190%;
+}
+
+.communitySection {
+    max-width: 70%;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.modIcons img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
 }
 
 /* Header styling */
