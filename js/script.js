@@ -392,6 +392,7 @@ filterButton1F.addEventListener('click', (e) => {
         filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
         filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
     }
+    loadMods();
 });
 filterButton2A.addEventListener('click', (e) => {
     if (filterImg2A.src.includes('2A_Unselected.png')) {
@@ -400,6 +401,7 @@ filterButton2A.addEventListener('click', (e) => {
         filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
         filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
     }
+    loadMods();
 });
 filterButtonANATC.addEventListener('click', (e) => {
     if (filterImgANATC.src.includes('ANATC_Unselected.png')) {
@@ -407,8 +409,8 @@ filterButtonANATC.addEventListener('click', (e) => {
         filterImg2A.src = 'Resources/Community/2A_Unselected.png';
         filterImgANATC.src = 'Resources/Community/ANATC_Selected.png';
         filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
-
     }
+    loadMods();
 });
 filterButtonCDi.addEventListener('click', (e) => {
     if (filterImgCDi.src.includes('CDi_Unselected.png')) {
@@ -417,9 +419,58 @@ filterButtonCDi.addEventListener('click', (e) => {
         filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
         filterImgCDi.src = 'Resources/Community/CDi_Selected.png';
     }
+    loadMods();
 });
 
+async function loadMods() {
+    let projecttag = "";
 
+    if (filterImg1F.src.includes("1F_Selected.png")) {
+        projecttag = "10601";
+    }
+    if (filterImg2A.src.includes("2A_Selected.png")) {
+        projecttag = "15019";
+    }
+    if (filterImgANATC.src.includes("ANATC_Selected.png")) {
+        projecttag = "15780";
+    }
+    if (filterImgCDi.src.includes("CDi_Selected.png")) {
+        projecttag = "6108";
+    }
+
+
+    /* Due to the general scuffed nature of GameBanana's API, This code here was written with AI-Assistance. I hope to one day redo this code completely */
+    const res = await fetch("https://api.gamebanana.com/Rss/Featured?gameid=" + projecttag);
+    const xmlText = await res.text();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(xmlText, "application/xml");
+    const items = xml.querySelectorAll("items > item");
+    const container = document.getElementById("featuredMods");
+    /* The code below is now written by me again */
+
+    container.innerHTML = "";
+
+    items.forEach(item => {
+        const title = item.querySelector("title")?.textContent;
+        const link = item.querySelector("link")?.textContent;
+        let image = item.querySelector("image")?.textContent.trim();
+            image = image.replace("/ss/Mod/", "/ss/mods/");
+            image = image.replace("/ss/Wip/", "/ss/wips/");
+            image = image.replace("/ss/Tutorial/", "/ss/tuts/");
+
+        const card = document.createElement("div");
+        card.className = "featured-mod";
+
+        card.innerHTML = `
+            <a href="${link}" target="_blank">
+                <img src="${image}" alt="${title}">
+            </a>
+            <h3>${title}</h3>
+        `;
+
+        container.appendChild(card);
+    });
+}
 
 document.addEventListener("DOMContentLoaded", changeRSDKImage);
 window.addEventListener('resize', changeRSDKImage);

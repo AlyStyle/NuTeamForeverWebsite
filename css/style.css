@@ -1,45 +1,51 @@
 @font-face {
   font-family: 'PenumbraSansStd';
-  src: url("../Resources/fonts/PenumbraSansStd-Regular.otf") format('opentype');
+  src: url("../Resources/Fonts/PenumbraSansStd-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'PenumbraSansStd-Bold';
-    src: url("../Resources/fonts/PenumbraSansStd-Bold.otf") format('opentype');
+    src: url("../Resources/Fonts/PenumbraSansStd-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'arial-black';
-    src: url("../Resources/fonts/arial-black.ttf") format('truetype');
+    src: url("../Resources/Fonts/arial-black.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'ZeroesOne';
-    src: url("../Resources/fonts/ZeroesOne.ttf") format('truetype');
+    src: url("../Resources/Fonts/ZeroesOne.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'PenumbraSansStd';
-  src: url("/NuTeamForeverWebsite/Resources/Fonts/PenumbraSansStd-Regular.otf")
+  src: url("../Resources/Fonts/PenumbraSansStd-Regular.otf")
        format("opentype");
 }
 
 @font-face {
   font-family: 'PenumbraSansStd-Bold';
-  src: url("/NuTeamForeverWebsite/Resources/Fonts/PenumbraSansStd-Bold.otf")
+  src: url("../Resources/Fonts/PenumbraSansStd-Bold.otf")
        format("opentype");
 }
 
 @font-face {
   font-family: 'arial-black';
-  src: url("/NuTeamForeverWebsite/Resources/Fonts/arial-black.ttf")
+  src: url("../Resources/Fonts/arial-black.ttf")
        format("truetype");
 }
 
 @font-face {
   font-family: 'ZeroesOne';
-  src: url("/NuTeamForeverWebsite/Resources/Fonts/ZeroesOne.ttf")
+  src: url("../Resources/Fonts/ZeroesOne.ttf")
        format("truetype");
+}
+
+@font-face {
+    font-family: 'BitDust2';
+    src: url("../Resources/Fonts/bitdust.ttf")
+         format("truetype");
 }
 
 
@@ -695,7 +701,7 @@ html {
     margin-top: 2vh;
 }
 .communityTitle h4 {
-    font-family: PenumbraSansStd, sans-serif;
+    font-family: "PenumbraSansStd", sans-serif;
     text-align: center;
     color: white;
     font-size: 190%;
@@ -714,6 +720,52 @@ html {
     width: 200px;
     height: auto;
     margin: 0 10px;
+}
+
+.mods-section {
+    background-color: #000000;
+    max-width: 40%;
+    margin: 80px auto;
+    text-align: center;
+    padding: 1%;
+    scrollbar-color: #ffffff #000000;
+}
+.mods-section h1 {
+    font-family: Impact, Helvetica, sans-serif;
+    color: white;
+    font-size: 3.3em;
+}
+.mods-section p {
+    font-family: 'BitDust2';
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+}
+
+.featured-mods {
+    display: flex;
+    gap: 2%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+    align-self: center;
+}
+
+.featured-mods img {
+    width: 50vh;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.featured-mods h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
 }
 
 /* Header styling */
