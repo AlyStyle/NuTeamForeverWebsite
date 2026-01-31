@@ -373,27 +373,17 @@ if (group) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", changeRSDKImage);
-window.addEventListener('resize', changeRSDKImage);
+
 
 const filterButton1F = document.getElementById('filter-1F');
 const filterButton2A = document.getElementById('filter-2A');
 const filterButtonANATC = document.getElementById('filter-ANATC');
 const filterButtonCDi = document.getElementById('filter-CDi');
 
-//if it exists
-if (!filterButton1F) {
-    const filterImg1F = filterButton1F.querySelector('img');
-}
-if (!filterButton2A) {
-    const filterImg2A = filterButton2A.querySelector('img');
-}
-if (!filterButtonANATC) {
-    const filterImgANATC = filterButtonANATC.querySelector('img');
-}
-if (!filterButtonCDi) {
-    const filterImgCDi = filterButtonCDi.querySelector('img');
-}
+const filterImg1F = filterButton1F.querySelector('img');
+const filterImg2A = filterButton2A.querySelector('img');
+const filterImgANATC = filterButtonANATC.querySelector('img');
+const filterImgCDi = filterButtonCDi.querySelector('img');
 
 filterButton1F.addEventListener('click', (e) => {
     if (filterImg1F.src.includes('1F_Unselected.png')) {
@@ -431,7 +421,8 @@ filterButtonCDi.addEventListener('click', (e) => {
 
 
 
-
+document.addEventListener("DOMContentLoaded", changeRSDKImage);
+window.addEventListener('resize', changeRSDKImage);
 
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
