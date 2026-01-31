@@ -742,7 +742,7 @@ html {
     margin-top: 10px;
 }
 
-.featured-mods {
+.featured-mods, .newest-mods {
     display: flex;
     gap: 2%;
     overflow-x: auto;
@@ -755,13 +755,13 @@ html {
     align-self: center;
 }
 
-.featured-mods img {
+.featured-mods img, .newest-mods img {
     width: 50vh;
     height: 50vh;
     object-fit: cover;
 }
 
-.featured-mods h3 {
+.featured-mods h3, .newest-mods h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     color: white;

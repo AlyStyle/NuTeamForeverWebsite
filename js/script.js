@@ -438,7 +438,6 @@ async function loadMods() {
         projecttag = "6108";
     }
 
-
     /* Due to the general scuffed nature of GameBanana's API, This code here was written with AI-Assistance. I hope to one day redo this code completely */
     const res = await fetch("https://api.gamebanana.com/Rss/Featured?gameid=" + projecttag);
     const xmlText = await res.text();
@@ -446,30 +445,69 @@ async function loadMods() {
     const xml = parser.parseFromString(xmlText, "application/xml");
     const items = xml.querySelectorAll("items > item");
     const container = document.getElementById("featuredMods");
+    
+    const res2 = await fetch("https://api.gamebanana.com/Rss/New?gameid=" + projecttag);
+    const xmlText2 = await res2.text();
+    const xml2 = parser.parseFromString(xmlText2, "application/xml");   
+    const items2 = xml2.querySelectorAll("items > item");
+    const container2 = document.getElementById("newestMods");
     /* The code below is now written by me again */
 
     container.innerHTML = "";
+    container2.innerHTML = "";
 
-    items.forEach(item => {
-        const title = item.querySelector("title")?.textContent;
-        const link = item.querySelector("link")?.textContent;
-        let image = item.querySelector("image")?.textContent.trim();
-            image = image.replace("/ss/Mod/", "/ss/mods/");
-            image = image.replace("/ss/Wip/", "/ss/wips/");
-            image = image.replace("/ss/Tutorial/", "/ss/tuts/");
+    if (items.length === 0) {
+        container2.innerHTML = "<p>The Gamebannana API is rate-limited. Please check back later...</p>";
+    } else {
+        items.forEach(item => {
+            const title = item.querySelector("title")?.textContent;
+            const link = item.querySelector("link")?.textContent;
+            let image = item.querySelector("image")?.textContent.trim();
+                image = image.replace("/ss/Mod/", "/ss/mods/");
+                image = image.replace("/ss/Wip/", "/ss/wips/");
+                image = image.replace("/ss/Tutorial/", "/ss/tuts/");
+                image = image.replace("/ss/Project/", "/ss/projects/");
+                image = image.replace("/ss/Concept/", "/ss/concepts/");
 
-        const card = document.createElement("div");
-        card.className = "featured-mod";
+            const card = document.createElement("div");
+            card.className = "featured-mod";
 
-        card.innerHTML = `
-            <a href="${link}" target="_blank">
-                <img src="${image}" alt="${title}">
-            </a>
-            <h3>${title}</h3>
-        `;
+            card.innerHTML = `
+                <a href="${link}" target="_blank">
+                    <img src="${image}" alt="${title}">
+                </a>
+                <h3>${title}</h3>
+            `;
 
-        container.appendChild(card);
-    });
+            container.appendChild(card);
+        });
+    }
+
+    if (items2.length === 0) {
+        container2.innerHTML = "<p>The Gamebannana API is rate-limited. Please check back later...</p>";
+    } else {
+        items2.forEach(item => {
+            const title = item.querySelector("title")?.textContent;
+            const link = item.querySelector("link")?.textContent;
+            let image = item.querySelector("image")?.textContent.trim();
+                image = image.replace("/ss/Mod/", "/ss/mods/");
+                image = image.replace("/ss/Wip/", "/ss/wips/");
+                image = image.replace("/ss/Tutorial/", "/ss/tuts/");
+                image = image.replace("/ss/Project/", "/ss/projects/");
+                image = image.replace("/ss/Concept/", "/ss/concepts/");
+
+            const card = document.createElement("div");
+            card.className = "featured-mod";
+
+            card.innerHTML = `
+                <a href="${link}" target="_blank">
+                    <img src="${image}" alt="${title}">
+                </a>
+                <h3>${title}</h3>
+            `;
+            container2.appendChild(card);
+        });
+    }
 }
 
 document.addEventListener("DOMContentLoaded", changeRSDKImage);
@@ -478,7 +516,7 @@ window.addEventListener('resize', changeRSDKImage);
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
     if (ver){
-        ver.innerText = '0.1.20260131.0227p'
+        ver.innerText = '0.1.20260131.0354p'
     }
 }
 document.addEventListener("DOMContentLoaded", versionNumber);
