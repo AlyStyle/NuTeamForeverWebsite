@@ -516,7 +516,7 @@ window.addEventListener('resize', changeRSDKImage);
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
     if (ver){
-        ver.innerText = '0.1.20260131.0354p'
+        ver.innerText = '0.1.20260131.0402p'
     }
 }
 document.addEventListener("DOMContentLoaded", versionNumber);
