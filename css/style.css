@@ -19,30 +19,6 @@
 }
 
 @font-face {
-  font-family: 'PenumbraSansStd';
-  src: url("../Resources/Fonts/PenumbraSansStd-Regular.otf")
-       format("opentype");
-}
-
-@font-face {
-  font-family: 'PenumbraSansStd-Bold';
-  src: url("../Resources/Fonts/PenumbraSansStd-Bold.otf")
-       format("opentype");
-}
-
-@font-face {
-  font-family: 'arial-black';
-  src: url("../Resources/Fonts/arial-black.ttf")
-       format("truetype");
-}
-
-@font-face {
-  font-family: 'ZeroesOne';
-  src: url("../Resources/Fonts/ZeroesOne.ttf")
-       format("truetype");
-}
-
-@font-face {
     font-family: 'BitDust2';
     src: url("../Resources/Fonts/bitdust.ttf")
          format("truetype");
@@ -829,11 +805,10 @@ html {
 
 .faq-header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background: #00006F;
   padding: 1.5rem 2rem;
   border-radius: 34px 34px 0 0;
-  z-index: 2;
 }
 
 .faq-header p {
@@ -844,10 +819,10 @@ html {
 }
 
 .faq-body {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-  color: black;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    color: black;
 }
 
 .faq-body p{
@@ -856,11 +831,11 @@ html {
 }
 
 .faq-body img {
-  position: absolute;
-  bottom: 0rem;
-  right: 0rem;
-  width: 200px;
-  z-index: 1;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 200px;
+    z-index: 1;
 }
 
 
@@ -895,6 +870,67 @@ html {
     color: white;
     font-size: 190%;
 }
+
+.credit-lead-section {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-radius: 40px;
+    background: #0000FF;
+    padding: 6px;
+    z-index: 0;
+}
+.credit-lead-section::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: rgb(255, 255, 255);
+    border-radius: 34px;
+    z-index: 0;
+}
+
+.credit-lead-header {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem 2rem;
+    border-radius: 34px 34px 0 0;
+    text-align: center;
+}
+.credit-lead-header img {
+    border-radius: 60px;
+    width: 70%;
+}
+.credit-lead-header h1 {
+    font-family: "ZeroesOne", Helvetica, sans-serif;
+    font-size: 200%;
+}
+.credit-lead-header h2 {
+    font-family: "ZeroesOne", Helvetica, sans-serif;
+    font-size: 100%;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.credits-lead {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 300px 0 300px;
+}
+
+.credit-lead-contacts {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.credit-lead-contacts img {
+    width: 70%;
+}
+
 
 
 
