@@ -813,7 +813,7 @@ html {
   max-width: 1000px;
   margin: 2rem auto;
   border-radius: 40px;
-  background: linear-gradient(#06007a, #04005a);
+  background: #0000FF;
   padding: 6px;
   z-index: 0;
 }
@@ -863,6 +863,38 @@ html {
   z-index: 1;
 }
 
+
+/* Credits Page */
+.creditsBody{
+    background-image: url("../Resources/BackgroundImage/Credits-Top.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}
+.creditsMain{
+    background-image: url("../Resources/BackgroundImage/Credits-Middle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+.creditsBottom{
+    background-image: url("../Resources/BackgroundImage/Credits-Bottom.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+}
+
+.creditsTitle {
+    background-color: #0000FF;
+    padding: 0.5%;
+    margin-top: 2vh;
+}
+.creditsTitle h4 {
+    font-family: "PenumbraSansStd", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 190%;
+}
 
 
 
