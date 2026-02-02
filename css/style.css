@@ -871,6 +871,13 @@ html {
     font-size: 190%;
 }
 
+.credits-lead {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 300px 0 300px;
+}
+
 .credit-lead-section {
     position: relative;
     width: 100%;
@@ -912,13 +919,6 @@ html {
     text-decoration: none;
 }
 
-.credits-lead {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding: 0 300px 0 300px;
-}
-
 .credit-lead-contacts {
     display: flex;
     flex-direction: row;
@@ -926,12 +926,76 @@ html {
     z-index: 2;
     text-align: center;
 }
-
 .credit-lead-contacts img {
     width: 70%;
 }
 
+.team-credit-section{
+    
+}
 
+.credit-section {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-radius: 40px;
+    background: #0000FF;
+    padding: 6px;
+    z-index: 0;
+}
+.credit-section::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: rgb(255, 255, 255);
+    border-radius: 34px;
+    z-index: 0;
+}
+
+.credit-name{
+    margin-left: 70px;
+}
+
+.credit-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+    background-color: #9698FF;
+}
+.credit-header img {
+    width: 10%;
+    margin-left: 5%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.credit-header h1 {
+    font-family: "ZeroesOne", Helvetica, sans-serif;
+    font-size: 200%;
+}
+.credit-header h2 {
+    font-family: "ZeroesOne", Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: left;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.credit-contacts {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    text-align: right;
+}
+.credit-contacts img {
+    width: 30%;
+}
 
 
 /* Header styling */
