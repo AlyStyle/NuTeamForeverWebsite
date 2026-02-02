@@ -691,7 +691,7 @@ html {
 .communityBody{
     background-image: url("../Resources/BackgroundImage/Community.png");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     background-size: 100% auto;
 }
 
