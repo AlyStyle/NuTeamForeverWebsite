@@ -841,21 +841,15 @@ html {
 
 /* Credits Page */
 .creditsBody{
-    background-image: url("../Resources/BackgroundImage/Credits-Top.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% auto;
+    background-image: url("../Resources/BackgroundImage/Credits-Top.png"), url("../Resources/BackgroundImage/Credits-Bottom.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100% auto, 100% auto;
 }
 .creditsMain{
     background-image: url("../Resources/BackgroundImage/Credits-Middle.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
-}
-.creditsBottom{
-    background-image: url("../Resources/BackgroundImage/Credits-Bottom.png");
-    background-repeat: no-repeat;
-    background-position: bottom center;
     background-size: 100% auto;
 }
 
@@ -930,10 +924,6 @@ html {
     width: 70%;
 }
 
-.team-credit-section{
-    
-}
-
 .credit-section {
     position: relative;
     width: 100%;
@@ -943,6 +933,7 @@ html {
     background: #0000FF;
     padding: 6px;
     z-index: 0;
+    
 }
 .credit-section::before {
     content: "";
@@ -951,10 +942,12 @@ html {
     background: rgb(255, 255, 255);
     border-radius: 34px;
     z-index: 0;
+    
 }
 
 .credit-name{
     margin-left: 70px;
+    margin: 0 auto;
 }
 
 .credit-header {
@@ -963,14 +956,13 @@ html {
     align-items: center;
     position: relative;
     z-index: 2;
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
     text-align: center;
     background-color: #9698FF;
 }
 .credit-header img {
-    width: 10%;
+    width: 100px;
     margin-left: 5%;
-    padding-right: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -994,7 +986,7 @@ html {
     text-align: right;
 }
 .credit-contacts img {
-    width: 30%;
+    width: 100px;
 }
 
 
