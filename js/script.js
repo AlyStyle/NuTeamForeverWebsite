@@ -382,56 +382,60 @@ const filterButtonCDi = document.getElementById('filter-CDi');
 
 if (filterButton1F) {
     const filterImg1F = filterButton1F.querySelector('img');
+
+    filterButton1F.addEventListener('click', (e) => {
+        if (filterImg1F.src.includes('1F_Unselected.png')) {
+            filterImg1F.src = 'Resources/Community/1F_Selected.png';
+            filterImg2A.src = 'Resources/Community/2A_Unselected.png';
+            filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
+            filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
+        }
+        loadMods();
+    });
 }
 
 if (filterButton2A) {
     const filterImg2A = filterButton2A.querySelector('img');
+
+    filterButton2A.addEventListener('click', (e) => {
+        if (filterImg2A.src.includes('2A_Unselected.png')) {
+            filterImg1F.src = 'Resources/Community/1F_Unselected.png';
+            filterImg2A.src = 'Resources/Community/2A_Selected.png';
+            filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
+            filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
+        }
+        loadMods();
+    });
 }
 
 if (filterButtonANATC) {
     const filterImgANATC = filterButtonANATC.querySelector('img');
+
+    filterButtonANATC.addEventListener('click', (e) => {
+        if (filterImgANATC.src.includes('ANATC_Unselected.png')) {
+            filterImg1F.src = 'Resources/Community/1F_Unselected.png';
+            filterImg2A.src = 'Resources/Community/2A_Unselected.png';
+            filterImgANATC.src = 'Resources/Community/ANATC_Selected.png';
+            filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
+        }
+        loadMods();
+    });
 }
 
 if (filterButtonCDi) {
     const filterImgCDi = filterButtonCDi.querySelector('img');
+
+    filterButtonCDi.addEventListener('click', (e) => {
+        if (filterImgCDi.src.includes('CDi_Unselected.png')) {
+            filterImg1F.src = 'Resources/Community/1F_Unselected.png';
+            filterImg2A.src = 'Resources/Community/2A_Unselected.png';
+            filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
+            filterImgCDi.src = 'Resources/Community/CDi_Selected.png';
+        }
+        loadMods();
+    });
 }
 
-filterButton1F.addEventListener('click', (e) => {
-    if (filterImg1F.src.includes('1F_Unselected.png')) {
-        filterImg1F.src = 'Resources/Community/1F_Selected.png';
-        filterImg2A.src = 'Resources/Community/2A_Unselected.png';
-        filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
-        filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
-    }
-    loadMods();
-});
-filterButton2A.addEventListener('click', (e) => {
-    if (filterImg2A.src.includes('2A_Unselected.png')) {
-        filterImg1F.src = 'Resources/Community/1F_Unselected.png';
-        filterImg2A.src = 'Resources/Community/2A_Selected.png';
-        filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
-        filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
-    }
-    loadMods();
-});
-filterButtonANATC.addEventListener('click', (e) => {
-    if (filterImgANATC.src.includes('ANATC_Unselected.png')) {
-        filterImg1F.src = 'Resources/Community/1F_Unselected.png';
-        filterImg2A.src = 'Resources/Community/2A_Unselected.png';
-        filterImgANATC.src = 'Resources/Community/ANATC_Selected.png';
-        filterImgCDi.src = 'Resources/Community/CDi_Unselected.png';
-    }
-    loadMods();
-});
-filterButtonCDi.addEventListener('click', (e) => {
-    if (filterImgCDi.src.includes('CDi_Unselected.png')) {
-        filterImg1F.src = 'Resources/Community/1F_Unselected.png';
-        filterImg2A.src = 'Resources/Community/2A_Unselected.png';
-        filterImgANATC.src = 'Resources/Community/ANATC_Unselected.png';
-        filterImgCDi.src = 'Resources/Community/CDi_Selected.png';
-    }
-    loadMods();
-});
 
 async function loadMods() {
     let projecttag = "";
