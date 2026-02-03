@@ -380,8 +380,13 @@ const filterButton2A = document.getElementById('filter-2A');
 const filterButtonANATC = document.getElementById('filter-ANATC');
 const filterButtonCDi = document.getElementById('filter-CDi');
 
+let filterImg1F;
+let filterImg2A;
+let filterImgANATC;
+let filterImgCDi;
+
 if (filterButton1F) {
-    const filterImg1F = filterButton1F.querySelector('img');
+    filterImg1F = filterButton1F.querySelector('img');
 
     filterButton1F.addEventListener('click', (e) => {
         if (filterImg1F.src.includes('1F_Unselected.png')) {
@@ -395,7 +400,7 @@ if (filterButton1F) {
 }
 
 if (filterButton2A) {
-    const filterImg2A = filterButton2A.querySelector('img');
+    filterImg2A = filterButton2A.querySelector('img');
 
     filterButton2A.addEventListener('click', (e) => {
         if (filterImg2A.src.includes('2A_Unselected.png')) {
@@ -409,7 +414,7 @@ if (filterButton2A) {
 }
 
 if (filterButtonANATC) {
-    const filterImgANATC = filterButtonANATC.querySelector('img');
+    filterImgANATC = filterButtonANATC.querySelector('img');
 
     filterButtonANATC.addEventListener('click', (e) => {
         if (filterImgANATC.src.includes('ANATC_Unselected.png')) {
@@ -423,7 +428,7 @@ if (filterButtonANATC) {
 }
 
 if (filterButtonCDi) {
-    const filterImgCDi = filterButtonCDi.querySelector('img');
+    filterImgCDi = filterButtonCDi.querySelector('img');
 
     filterButtonCDi.addEventListener('click', (e) => {
         if (filterImgCDi.src.includes('CDi_Unselected.png')) {
@@ -531,7 +536,7 @@ window.addEventListener('resize', changeRSDKImage);
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
     if (ver){
-        ver.innerText = '0.1.20260203.0323a'
+        ver.innerText = '0.1.20260203.0329a'
     }
 }
 document.addEventListener("DOMContentLoaded", versionNumber);
