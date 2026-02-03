@@ -869,12 +869,11 @@ html {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    padding: 0 300px 0 300px;
 }
 
 .credit-lead-section {
     position: relative;
-    width: 100%;
+    width: 400px;
     max-width: 1000px;
     margin: 2rem auto;
     border-radius: 40px;
