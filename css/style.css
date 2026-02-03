@@ -900,7 +900,7 @@ html {
 }
 .credit-lead-header img {
     border-radius: 60px;
-    width: 70%;
+    width: 200px;
 }
 .credit-lead-header h1 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
@@ -921,7 +921,7 @@ html {
     text-align: center;
 }
 .credit-lead-contacts img {
-    width: 70%;
+    width: 200px;
 }
 
 .credit-section {
