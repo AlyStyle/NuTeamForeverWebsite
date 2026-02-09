@@ -853,6 +853,15 @@ html {
     background-size: 100% auto;
 }
 
+.creditsMain h1 {
+    font-family: "ZeroesOne", Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 5em;
+    padding-top: 2vh;
+    text-decoration: dotted underline;
+}
+
 .creditsTitle {
     background-color: #0000FF;
     padding: 0.5%;
@@ -904,6 +913,7 @@ html {
 .credit-lead-header h1 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
     font-size: 200%;
+    text-decoration: none;
 }
 .credit-lead-header h2 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
@@ -968,6 +978,7 @@ html {
 .credit-header h1 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
     font-size: 200%;
+    text-decoration: none;
 }
 .credit-header h2 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
