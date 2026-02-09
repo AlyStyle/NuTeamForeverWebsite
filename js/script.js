@@ -232,6 +232,26 @@ function projectPopup(projectid , projectimage) {
         projectSocialLink.href = "";
         projectSocialLink.innerText = "Discord";
     }
+    if (projectid === "MegamixMania"){
+        projectAuthor.innerText = "by Team Megamix Mania";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/MegamixMania.jpg";
+        projectDesc.innerText = "Sonic Megamix Mania is a fan-made modification for Sonic Mania Plus that aims to carry the torch of the discontinued ROM hack known as “Sonic the Hedgehog Megamix”. Megamix Mode adapts concepts from the ROM hack combined with the team's own vision bringing a unique experience built upon the foundation of the original. Classic Mode is a faithful remake of the content from “V.4.0b” of the ROM hack that offers a familiar experience with a fresh coat of paint. Sonic Megamix Mania offers beginner friendly and challenging experiences for old and new fans alike.";
+        whoEnvolved.innerText = "Current members of the team, including SnowballThePuppy and KiaraGale, contributed to this project! Legacy members of the team (Burrotis, RetroForever and Louplayer) contributed as well, plus we are also personally big fans of the team's work!";
+        projectSiteLink.href = "https://sonicmegamixmania.github.io/#/";
+        projectSiteLink.innerText = "Download";
+        projectSocialLink.href = "https://bsky.app/profile/megamixmania.bsky.social";
+        projectSocialLink.innerText = "Bluesky";
+    }
+    if (projectid === "SMBR"){
+        projectAuthor.innerText = "by JHDev2006";
+        projectPromo.src = "Resources/Home/ThirdParty/Thumbnails/SMBR.png";
+        projectDesc.innerText = "A Remake / Celebration of the original 'Super Mario Bros.' games. Features new levels, custom modes, new characters, alongside a full level editor / custom level system!";
+        whoEnvolved.innerText = "";
+        projectSiteLink.href = "https://github.com/JHDev2006/Super-Mario-Bros.-Remastered-Public";
+        projectSiteLink.innerText = "Download";
+        projectSocialLink.href = "https://discord.com/invite/A68uRsnja3";
+        projectSocialLink.innerText = "Discord";
+    }
 }
 
 function closeProjectPopup() {
