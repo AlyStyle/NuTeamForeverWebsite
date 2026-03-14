@@ -25,6 +25,9 @@ Make screenshots clickable, opening up a full view image (like the third party p
 Sonic CD - fix the character gifs at bottom
 figure out why screenshots scroll sometimes slow and sometimes not
 
+CREDITS
+-------
+Special Thanks to BetaNCourses and Sonk for Early v4 testings
 
 CONCEPTS
 --------
