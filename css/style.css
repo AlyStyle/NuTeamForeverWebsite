@@ -858,7 +858,6 @@ html {
     text-align: center;
     color: black;
     font-size: 5em;
-    padding-top: 2vh;
     text-decoration: dotted underline;
 }
 
@@ -943,7 +942,7 @@ html {
     width: 200px;
 }
 
-.credit-section {
+.credit-section, .credit-section-nonteam {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -963,13 +962,21 @@ html {
     z-index: 0;
 }
 
+.credit-section-nonteam::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: #9698FF;
+    border-radius: 34px;
+    z-index: 0;
+}
 
 .credit-name{
     margin-left: 70px;
     margin: 0 auto;
 }
 
-.credit-header {
+.credit-header, .credit-header-nonteam {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -977,6 +984,8 @@ html {
     z-index: 2;
     margin: 1rem 0 1rem 0;
     text-align: center;
+}
+.credit-header {
     background-color: #9698FF;
 }
 .credit-header img {
@@ -985,15 +994,15 @@ html {
     padding-top: 1%;
     padding-bottom: 1%;
 }
-.credit-header h1 {
+.credit-header h1, .credit-header-nonteam h1 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
     font-size: 200%;
     text-decoration: none;
 }
-.credit-header h1 a {
+.credit-header h1 a, .credit-header-nonteam h1 a {
     color: #000000;
 }
-.credit-header h2 {
+.credit-header h2, .credit-header-nonteam h2 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
     font-size: 100%;
     text-transform: none;

@@ -556,7 +556,13 @@ window.addEventListener('resize', changeRSDKImage);
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
     if (ver){
-        ver.innerText = '0.1.20260209.1020a'
+        const year = '2026';
+        const month = '03';
+        const day = '16';
+        const time = '1004a';
+
+        const version = `0.1.${year}${month}${day}.${time}`;
+        ver.innerText = version;
     }
 }
 document.addEventListener("DOMContentLoaded", versionNumber);
