@@ -1508,4 +1508,25 @@ main, footer {
     .seperateDiv3 {
         order: 3;
     }
+
+    .creditsMain{
+ 
+    }
+
+    .credit-lead-section {
+    position: relative;
+    border-radius: 40px;
+    background: #0000FF;
+}
+
+
+    .credits-lead {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 3rem auto;
+    max-width: 100vh;
+}
 }
