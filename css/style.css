@@ -30,6 +30,46 @@ html {
     scroll-behavior: smooth;
 }
 
+#fadeOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: black;
+
+    opacity: 1; 
+    pointer-events: all;
+
+    transition: opacity 0.4s ease;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fadeOverlay.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loadingText {
+    color: white;
+    font-family: "ZeroesOne", sans-serif; /* fits your style */
+    font-size: 4.5em;
+
+    text-align: center;
+
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
 /* Home Page */
 .indexBody{
     background-image: url("../Resources/BackgroundImage/Home.png");
@@ -1051,6 +1091,7 @@ html {
 
 /* Header styling */
 .TFHeader {
+    z-index: 2;
     display: flex;
     justify-content: center;
     background-color: #000000;
@@ -1081,6 +1122,7 @@ li {
     padding: 10px;
     font-size: 190%;
     transform: scaleY(1.3);
+    
 }
 
 .hamburger{
@@ -1227,7 +1269,12 @@ footer h1 {
     pointer-events: none;
 }
 
-header, main, footer {
+header {
+    position: relative;
+    z-index: 2;   
+}
+
+main, footer {
     position: relative;
     z-index: 1;
 }

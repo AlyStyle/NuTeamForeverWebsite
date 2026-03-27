@@ -557,9 +557,37 @@ async function loadMods() {
         });
     }
 }
-
 document.addEventListener("DOMContentLoaded", changeRSDKImage);
 window.addEventListener('resize', changeRSDKImage);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById("fadeOverlay");
+    const links = document.querySelectorAll(".navLink");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const target = this.href;
+
+            // make it visible again
+            overlay.classList.remove("fade-out");
+
+            setTimeout(() => {
+                window.location.href = target;
+            }, 400);
+        });
+    });
+});
+
+window.addEventListener("load", () => {
+    const overlay = document.getElementById("fadeOverlay");
+
+    // small delay ensures browser paints first
+    setTimeout(() => {
+        overlay.classList.add("fade-out");
+    }, 50);
+});
 
 function versionNumber() {
     const ver = document.getElementById('versionNumber');
