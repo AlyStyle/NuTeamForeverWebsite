@@ -382,6 +382,7 @@ html {
 
 .appIcons{
     display: flex;
+    flex-direction: row;
     gap: 10px;
     align-items: center;
     width: 100%;
@@ -467,6 +468,10 @@ html {
     letter-spacing: 0.5rem;
     text-align: center;
     margin-bottom: 4vh;
+}
+
+.sonicGif {
+    justify-self: center;
 }
 
 
@@ -851,6 +856,13 @@ html {
 }
 
 /* FAQ page */
+.supportBody{
+    background-image: url("../Resources/BackgroundImage/Support-Top.png"), url("../Resources/BackgroundImage/Support-Bottom.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100% auto, 100% auto;
+}
+
 .faq-section {
   position: relative;
   width: 100%;
@@ -1420,20 +1432,20 @@ main, footer {
         left: 0;
     }
 
-    body{
+    .indexBody{
         background-image: url("../Resources/BackgroundImage/Home.png");
         background-repeat: no-repeat;
-        background-position: bottom top;
+        background-position: bottom center;
         background-size: 300% auto;
     }
 
     .aboutSection {
-        line-height: 110%;
+        line-height: 130%;
         text-align: center;
         max-width: 80%;
     }
 
-    .aboutSection p, .v4Section p{
+    .aboutSection p, .v4Section p, .v4Section li{
         font-size: 1em;
     }
 
@@ -1452,7 +1464,7 @@ main, footer {
     }
 
     .sonicGif {
-        margin-left: 0;
+        margin-top: 70px;
     }
 
     .v4Section {
@@ -1493,7 +1505,7 @@ main, footer {
         margin-top: 4px;
     }
 
-        .TFcontent {
+    .TFcontent {
         display: flex;
         flex-direction: column;
     }
@@ -1519,45 +1531,62 @@ main, footer {
     }
 
     .credit-lead-section {
-    position: relative;
-    border-radius: 40px;
-    background: #0000FF;
-}
+        position: relative;
+        border-radius: 40px;
+        background: #0000FF;
+    }
 
-.credit-header{
-    display: flex;
-    flex-direction: column;
-}
+    .credit-header{
+        display: flex;
+        flex-direction: column;
+    }
 
-.credit-contacts{
-    justify-content: center;
+    .credit-contacts{
+        justify-content: center;
 
-}
+    }
 
+    .credits-lead {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 40px;
+        margin: 3rem auto;
+        max-width: 100vh;
+    }
 
-.credits-lead {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 40px;
-    margin: 3rem auto;
-    max-width: 100vh;
-}
+    .credit-name{
+        margin-left: 0;
+    }
 
-.credit-name{
-    margin-left: 0;
-}
+    .appIcons{
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .appIcons img {
+        width: 90%;
+        height: auto;
+    }
 
-.faq-body{
-    overflow: auto;
-}
+    .faq-body{
+        overflow: auto;
+    }
 
-.faq-body img{
-    visibility: hidden;
-}
+    .faq-body img{
+        visibility: hidden;
+    }
 
+    .faq-section {
+        width: 90%;
+    }
 
+    .projectImages {
+        width: 225%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
 }
