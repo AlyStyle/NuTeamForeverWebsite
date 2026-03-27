@@ -1550,5 +1550,14 @@ main, footer {
 }
 
 
+.faq-body{
+    overflow: auto;
+}
+
+.faq-body img{
+    visibility: hidden;
+}
+
+
 
 }
