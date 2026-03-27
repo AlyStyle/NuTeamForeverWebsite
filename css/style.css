@@ -923,15 +923,14 @@ html {
 
 .creditsMain h1 {
     font-family: "ZeroesOne", Helvetica, sans-serif;
-    text-align: center;
     color: black;
     font-size: 5em;
     text-decoration: dotted underline;
+    text-align: center;
 }
 
 .creditsMain p {
     font-family: "arial-black", sans-serif;
-    text-align: center;
     margin: 0 auto;
     max-width: 1000px;
     font-size: 1.5em;
@@ -951,23 +950,22 @@ html {
 
 .credits-lead {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
     gap: 40px;
     margin: 3rem auto;
-    max-width: 1100px;
+    width: 70%;
 }
 
-.credit-lead-section {
+.credits-lead section {
     position: relative;
     width: 100%;
-    min-width: 420px;
     border-radius: 40px;
     background: #0000FF;
     padding: 6px;
 }
 
-.credit-lead-section::before {
+.credits-lead section::before {
     content: "";
     position: absolute;
     inset: 6px;
@@ -978,9 +976,10 @@ html {
 
 .credit-lead-header {
     position: relative;
-    z-index: 2;
     padding: 1.5rem 2rem;
     border-radius: 34px 34px 0 0;
+    display: grid;
+    justify-content: center;
     text-align: center;
 }
 .credit-lead-header img {
@@ -1003,8 +1002,7 @@ html {
     display: flex;
     flex-direction: row;
     position: relative;
-    z-index: 2;
-    text-align: center;
+    justify-content: center;
 }
 .credit-lead-contacts img {
     width: 200px;
@@ -1012,8 +1010,7 @@ html {
 
 .credit-section, .credit-section-nonteam {
     position: relative;
-    width: 100%;
-    max-width: 1000px;
+    width: 70%;
     margin: 3rem auto;
     border-radius: 40px;
     background: #0000FF;
@@ -1021,7 +1018,7 @@ html {
 }
 
 .credit-section::before,
-.credit-lead-section::before {
+.credit-lead section::before {
     content: "";
     position: absolute;
     inset: 6px;
@@ -1041,17 +1038,15 @@ html {
 
 .credit-name{
     margin-left: 70px;
-    margin: 0 auto;
 }
 
-.credit-header, .credit-header-nonteam {
+.credit-header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     position: relative;
-    z-index: 2;
     margin: 1rem 0 1rem 0;
     text-align: center;
+    align-items: center;
 }
 .credit-header {
     background-color: #9698FF;
@@ -1080,12 +1075,21 @@ html {
 .credit-contacts {
     display: flex;
     flex-direction: row;
-    position: relative;
-    z-index: 2;
-    text-align: right;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 5%;
 }
 .credit-contacts img {
     width: 100px;
+}
+
+.credit-header-nonteam {
+    position: relative;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 

@@ -562,7 +562,7 @@ window.addEventListener('resize', changeRSDKImage);
 
 document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById("fadeOverlay");
-    const links = document.querySelectorAll(".navLink");
+    const links = document.querySelectorAll(".navLink, .slides a");
 
     links.forEach(link => {
         link.addEventListener("click", function (e) {
@@ -570,7 +570,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const target = this.href;
 
-            // make it visible again
             overlay.classList.remove("fade-out");
 
             setTimeout(() => {
@@ -583,7 +582,6 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", () => {
     const overlay = document.getElementById("fadeOverlay");
 
-    // small delay ensures browser paints first
     setTimeout(() => {
         overlay.classList.add("fade-out");
     }, 50);
@@ -595,7 +593,7 @@ function versionNumber() {
         const year = '2026';
         const month = '03';
         const day = '27';
-        const time = '0339p';
+        const time = '0500p';
 
         const version = `0.1.${year}${month}${day}.${time}`;
         ver.innerText = version;
