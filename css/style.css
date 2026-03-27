@@ -494,7 +494,7 @@ html {
 }
 
 
-.TFimages{
+.TFimages, .TFimages-FNAF{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -512,6 +512,13 @@ html {
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0.5vh 0.6vw #fff);
+}
+
+.TFimages-FNAF img {
+    width: 50%;      
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0.5vh 0.2vw #000000);
 }
 
 .TFgif {
@@ -654,6 +661,27 @@ html {
     background-repeat: no-repeat;
     background-position: bottom center, top;
     background-size: cover, 100% auto;
+}
+
+.natfbody{
+    background-image: url("../Resources/BackgroundImage/5NATF-1.png"), url("../Resources/BackgroundImage/5NATF-2.png");
+    background-repeat: no-repeat;
+    background-position: bottom center, top;
+    background-size: cover, 100% auto;
+}
+
+.bg-video {
+    position: fixed; /* key change */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    object-fit: cover; /* acts like background-size: cover */
+
+    z-index: -1; /* puts it behind everything */
+    pointer-events: none; /* prevents blocking clicks */
 }
 
 .mulitpleImage {
@@ -1188,6 +1216,20 @@ footer h1 {
 .back-to-top {
     grid-column: 3;
     justify-self: end;
+}
+
+.natfbody::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* adjust darkness here */
+    z-index: 0;
+    pointer-events: none;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
 }
 
 

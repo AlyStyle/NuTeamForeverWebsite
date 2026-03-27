@@ -318,6 +318,14 @@ document.querySelector(".menu-overlay").addEventListener("click", () => {
     document.querySelector(".menu-overlay").classList.remove("active");
 });
 
+const video = document.getElementById("bgVideo");
+
+if (video) {
+    video.addEventListener("playing", () => {
+        video.playbackRate = 0.3;
+    });
+}
+
 function changeRSDKImage() {
     const v3Img = document.getElementById('v3');
     if (v3Img) {
@@ -558,8 +566,8 @@ function versionNumber() {
     if (ver){
         const year = '2026';
         const month = '03';
-        const day = '16';
-        const time = '1004a';
+        const day = '27';
+        const time = '0239p';
 
         const version = `0.1.${year}${month}${day}.${time}`;
         ver.innerText = version;
