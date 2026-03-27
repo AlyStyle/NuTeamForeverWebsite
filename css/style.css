@@ -1509,8 +1509,12 @@ main, footer {
         order: 3;
     }
 
-    .creditsMain{
- 
+    .creditsMain div{
+        font-size: 0.8em;
+    }
+
+    .credit-lead-contacts img{
+     width: 10vh;
     }
 
     .credit-lead-section {
@@ -1519,8 +1523,18 @@ main, footer {
     background: #0000FF;
 }
 
+.credit-header{
+    display: flex;
+    flex-direction: column;
+}
 
-    .credits-lead {
+.credit-contacts{
+    justify-content: center;
+
+}
+
+
+.credits-lead {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1529,4 +1543,11 @@ main, footer {
     margin: 3rem auto;
     max-width: 100vh;
 }
+
+.credit-name{
+    margin-left: 0;
+}
+
+
+
 }
