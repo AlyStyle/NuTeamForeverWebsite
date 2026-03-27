@@ -873,6 +873,7 @@ html {
 
 .faq-header {
   position: relative;
+  font-family: "PenumbraSansStd", sans-serif;
   z-index: 2;
   background: #00006F;
   padding: 1.5rem 2rem;
